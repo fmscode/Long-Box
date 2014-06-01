@@ -13,27 +13,11 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
-    /*
-    _managedObjectContext = [[CoreDataManagerX sharedInstance] managedObjectContext];
-    
-//    Series *newSeries = [NSEntityDescription insertNewObjectForEntityForName:@"Series" inManagedObjectContext:_managedObjectContext];
-//    newSeries.title = @"Superman";
-//    
-//    Publisher *pub = [NSEntityDescription insertNewObjectForEntityForName:@"Publisher" inManagedObjectContext:_managedObjectContext];
-//    pub.name = @"DC Comics";
-//    newSeries.publisher = pub;
-//    
-//    
-//    Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:_managedObjectContext];
-//    newIssue.issueNumber = @"1";
-//    newIssue.series = newSeries;
-//    [[CoreDataManagerX sharedInstance] saveContext];
-    
-    */
 
-    NSFetchRequest *issues = [NSFetchRequest fetchRequestWithEntityName:@"Trade"];
-    NSArray *issuesArray = [[[CoreDataManagerX sharedInstance] managedObjectContext] executeFetchRequest:issues error:nil];
-//    NSLog(@"%@",[(Trade *)issuesArray[0] series]);
+}
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag{
+    [_window makeKeyAndOrderFront:nil];
+    return YES;
 }
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {

@@ -25,7 +25,13 @@
     }
     return self;
 }
-
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self){
+        self.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
+    }
+    return self;
+}
 - (IBAction)search:(id)sender{
     searchString = [sender stringValue];
     [self rearrangeObjects];

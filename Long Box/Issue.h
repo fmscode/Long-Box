@@ -15,7 +15,7 @@
 
 @property (nonatomic, retain) NSString * issueNumber;
 @property (nonatomic, retain) NSString * note;
-@property (nonatomic, retain) NSDate * publishDate;
+@property (nonatomic, retain) NSString * publishDate;
 @property (nonatomic, retain) Series *series;
 
 @end

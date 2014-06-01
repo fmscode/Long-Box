@@ -8,7 +8,7 @@
             <connections>
                 <outlet property="issueNumber" destination="3tJ-U2-wcH" id="oDB-Cf-Wou"/>
                 <outlet property="notesField" destination="8dq-Oe-2Z2" id="DRu-mb-o6b"/>
-                <outlet property="publishDate" destination="Mo5-d3-J1y" id="YPK-Za-HkW"/>
+                <outlet property="publishDate" destination="8on-kM-V4L" id="NZp-lq-u6Q"/>
                 <outlet property="publisherBox" destination="V0K-hs-huv" id="yhp-SN-bo7"/>
                 <outlet property="publisherController" destination="eP7-Vm-fh2" id="uAo-mA-gmb"/>
                 <outlet property="seriesBox" destination="IcG-r0-BWf" id="eRE-Cz-Nfa"/>
@@ -90,7 +90,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="91" id="raC-2q-g4o"/>
                         </constraints>
-                        <buttonCell key="cell" type="roundTextured" title="Cancel" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8xR-2j-QOW">
+                        <buttonCell key="cell" type="roundTextured" title="Done" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8xR-2j-QOW">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -147,11 +147,11 @@
                         <tabViewItems>
                             <tabViewItem label="Issue" identifier="1" id="v33-wl-BZo">
                                 <view key="view" ambiguous="YES" id="y9o-Jr-V83">
-                                    <rect key="frame" x="10" y="33" width="431" height="375"/>
+                                    <rect key="frame" x="10" y="33" width="113" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crm-Yt-qCY">
-                                            <rect key="frame" x="115" y="329" width="97" height="18"/>
+                                            <rect key="frame" x="115" y="-46" width="97" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Issue Number" id="OIm-2C-p3i">
                                                 <font key="font" metaFont="system" size="14"/>
@@ -160,7 +160,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3tJ-U2-wcH">
-                                            <rect key="frame" x="218" y="327" width="96" height="22"/>
+                                            <rect key="frame" x="218" y="-48" width="96" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ORk-9c-yRI">
                                                 <font key="font" metaFont="system"/>
@@ -169,7 +169,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYY-rF-rkk">
-                                            <rect key="frame" x="115" y="294" width="89" height="18"/>
+                                            <rect key="frame" x="115" y="-81" width="89" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Publish Date" id="o9Y-2j-WBF">
                                                 <font key="font" metaFont="system" size="14"/>
@@ -177,40 +177,15 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <datePicker verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mo5-d3-J1y">
-                                            <rect key="frame" x="218" y="294" width="96" height="22"/>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8on-kM-V4L">
+                                            <rect key="frame" x="218" y="-83" width="96" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerStyle="textField" id="QIZ-KH-MaQ">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="dfS-Wo-CGi">
                                                 <font key="font" metaFont="system"/>
-                                                <calendarDate key="date" timeIntervalSinceReferenceDate="-595929600" calendarFormat="%Y-%m-%d %H:%M:%S %z">
-                                                    <!--1982-02-12 08:00:00 -0800-->
-                                                    <timeZone key="timeZone" name="US/Pacific">
-                                                        <data key="data">
-VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
-y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
-5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
-8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
-AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
-DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
-HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
-KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
-OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
-Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
-VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
-Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
-cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
-f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
-AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
-AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
-AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</data>
-                                                    </timeZone>
-                                                </calendarDate>
-                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <datePickerElements key="datePickerElements" year="YES" month="YES"/>
-                                            </datePickerCell>
-                                        </datePicker>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -242,11 +217,28 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             </tabViewItem>
                         </tabViewItems>
                     </tabView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LND-Rp-Glv">
+                        <rect key="frame" x="628" y="6" width="117" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="oDq-8b-IoN"/>
+                            <constraint firstAttribute="width" constant="117" id="oGY-Bd-3GC"/>
+                        </constraints>
+                        <buttonCell key="cell" type="roundTextured" title="Add Second" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OKN-wC-Rpl">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addSecondComic:" target="-2" id="gsW-Xo-uO9"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="ALn-EF-2cV" secondAttribute="trailing" constant="20" id="IRm-Kh-Obg"/>
                     <constraint firstAttribute="bottom" secondItem="ALn-EF-2cV" secondAttribute="bottom" constant="8" id="KLu-F4-cQF"/>
+                    <constraint firstAttribute="trailing" secondItem="LND-Rp-Glv" secondAttribute="trailing" constant="127" id="Ltt-oD-887"/>
                     <constraint firstAttribute="bottom" secondItem="q6F-3S-akG" secondAttribute="bottom" constant="8" id="RvC-Kb-i7V"/>
+                    <constraint firstItem="LND-Rp-Glv" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="455" id="Ue7-hR-p0R"/>
                     <constraint firstItem="q6F-3S-akG" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="z9a-bS-cfQ"/>
                 </constraints>
             </view>

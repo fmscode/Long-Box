@@ -19,7 +19,7 @@
 @property (nonatomic) IBOutlet NSArrayController *seriesController;
 @property (nonatomic) IBOutlet NSArrayController *publisherController;
 @property (nonatomic) IBOutlet NSTextField *issueNumber;
-@property (nonatomic) IBOutlet NSDatePicker *publishDate;
+@property (nonatomic) IBOutlet NSTextField *publishDate;
 @property (nonatomic) IBOutlet NSComboBox *seriesBox;
 @property (nonatomic) IBOutlet NSComboBox *publisherBox;
 @property (nonatomic) IBOutlet NSTextView *notesField;
@@ -28,6 +28,7 @@
 
 - (IBAction)cancelNew:(id)sender;
 - (IBAction)saveComic:(id)sender;
+- (IBAction)addSecondComic:(id)sender;
 
 @end
 
@@ -51,7 +52,9 @@
     _publisherBox.stringValue = @"";
     [_seriesController setSelectionIndex:-1];
     [_publisherController setSelectionIndex:-1];
+    _publishDate.stringValue = @"";
     _notesField.string = @"";
+    _tpbTitleField.stringValue = @"";
 }
 - (void)updatePublisher{
     if ([_seriesBox indexOfSelectedItem] != -1){
@@ -65,9 +68,7 @@
         [_publisherBox setStringValue:@""];
     }
 }
-#pragma mark - Class Actions
-- (IBAction)saveComic:(id)sender{
-    
+- (void)saveComicData{
     NSManagedObjectContext *context = [[CoreDataManagerX sharedInstance] managedObjectContext];
     NSString *publisher = _publisherBox.stringValue;
     NSString *seriesString = _seriesBox.stringValue;
@@ -97,7 +98,7 @@
     if ([_tabView.selectedTabViewItem.identifier isEqualToString:@"1"]){
         Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:context];
         newIssue.issueNumber = _issueNumber.stringValue;
-        newIssue.publishDate = _publishDate.dateValue;
+        newIssue.publishDate = _publishDate.stringValue;
         newIssue.series = series;
         newIssue.note = _notesField.string;
     }else{
@@ -108,7 +109,14 @@
     }
     
     [[CoreDataManagerX sharedInstance] saveContext];
+}
+#pragma mark - Class Actions
+- (IBAction)saveComic:(id)sender{
+    [self saveComicData];
     [self clearUI];
+}
+- (IBAction)addSecondComic:(id)sender{
+    [self saveComicData];
 }
 - (IBAction)cancelNew:(id)sender{
     [self clearUI];
