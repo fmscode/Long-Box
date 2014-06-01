@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0A2668193B48B500234D4F /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0A2667193B48B500234D4F /* Publisher.m */; };
+		DB0A266B193B48B600234D4F /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0A266A193B48B600234D4F /* Series.m */; };
+		DB0A266E193B48B600234D4F /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0A266D193B48B600234D4F /* Issue.m */; };
+		DB0A2671193B48B600234D4F /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0A2670193B48B600234D4F /* Trade.m */; };
 		DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4A1938C55F00422589 /* DateTransformer.m */; };
 		DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4D1938C65500422589 /* ComicsWindow.m */; };
 		DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F501938CA3700422589 /* SeriesArrayController.m */; };
-		DB215F631938DB5A00422589 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F621938DB5A00422589 /* Issue.m */; };
-		DB215F661938DB5B00422589 /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F651938DB5B00422589 /* Publisher.m */; };
-		DB215F691938DB5B00422589 /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F681938DB5B00422589 /* Series.m */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD38287193526DA00C8965C /* InfoPlist.strings */; };
 		DBD3828B193526DA00C8965C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3828A193526DA00C8965C /* main.m */; };
@@ -41,18 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0A2666193B48B500234D4F /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
+		DB0A2667193B48B500234D4F /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
+		DB0A2669193B48B600234D4F /* Series.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Series.h; sourceTree = "<group>"; };
+		DB0A266A193B48B600234D4F /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
+		DB0A266C193B48B600234D4F /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
+		DB0A266D193B48B600234D4F /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
+		DB0A266F193B48B600234D4F /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
+		DB0A2670193B48B600234D4F /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
 		DB215F491938C55F00422589 /* DateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTransformer.h; sourceTree = "<group>"; };
 		DB215F4A1938C55F00422589 /* DateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTransformer.m; sourceTree = "<group>"; };
 		DB215F4C1938C65500422589 /* ComicsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsWindow.h; sourceTree = "<group>"; };
 		DB215F4D1938C65500422589 /* ComicsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsWindow.m; sourceTree = "<group>"; };
 		DB215F4F1938CA3700422589 /* SeriesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesArrayController.h; sourceTree = "<group>"; };
 		DB215F501938CA3700422589 /* SeriesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriesArrayController.m; sourceTree = "<group>"; };
-		DB215F611938DB5A00422589 /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
-		DB215F621938DB5A00422589 /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
-		DB215F641938DB5B00422589 /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
-		DB215F651938DB5B00422589 /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
-		DB215F671938DB5B00422589 /* Series.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Series.h; sourceTree = "<group>"; };
-		DB215F681938DB5B00422589 /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
 		DBD3827B193526DA00C8965C /* Long Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Long Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3827E193526DA00C8965C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DBD38281193526DA00C8965C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -151,10 +154,6 @@
 				DBD382B9193529E800C8965C /* NewComicWindow.h */,
 				DBD382BA193529E800C8965C /* NewComicWindow.m */,
 				DBD382BB193529E800C8965C /* NewComicWindow.xib */,
-				DB215F491938C55F00422589 /* DateTransformer.h */,
-				DB215F4A1938C55F00422589 /* DateTransformer.m */,
-				DB215F4F1938CA3700422589 /* SeriesArrayController.h */,
-				DB215F501938CA3700422589 /* SeriesArrayController.m */,
 				DBD382B51935270000C8965C /* Core Data */,
 				DBD38296193526DA00C8965C /* Images.xcassets */,
 				DBD38285193526DA00C8965C /* Supporting Files */,
@@ -197,13 +196,19 @@
 			children = (
 				DBD382B2193526E300C8965C /* CoreDataManagerX.h */,
 				DBD382B3193526E300C8965C /* CoreDataManagerX.m */,
+				DB215F491938C55F00422589 /* DateTransformer.h */,
+				DB215F4A1938C55F00422589 /* DateTransformer.m */,
+				DB215F4F1938CA3700422589 /* SeriesArrayController.h */,
+				DB215F501938CA3700422589 /* SeriesArrayController.m */,
 				DBD382B61935271400C8965C /* longbox.xcdatamodeld */,
-				DB215F671938DB5B00422589 /* Series.h */,
-				DB215F681938DB5B00422589 /* Series.m */,
-				DB215F641938DB5B00422589 /* Publisher.h */,
-				DB215F651938DB5B00422589 /* Publisher.m */,
-				DB215F611938DB5A00422589 /* Issue.h */,
-				DB215F621938DB5A00422589 /* Issue.m */,
+				DB0A266F193B48B600234D4F /* Trade.h */,
+				DB0A2670193B48B600234D4F /* Trade.m */,
+				DB0A266C193B48B600234D4F /* Issue.h */,
+				DB0A266D193B48B600234D4F /* Issue.m */,
+				DB0A2669193B48B600234D4F /* Series.h */,
+				DB0A266A193B48B600234D4F /* Series.m */,
+				DB0A2666193B48B500234D4F /* Publisher.h */,
+				DB0A2667193B48B500234D4F /* Publisher.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -307,14 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB215F631938DB5A00422589 /* Issue.m in Sources */,
 				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
+				DB0A2668193B48B500234D4F /* Publisher.m in Sources */,
+				DB0A266B193B48B600234D4F /* Series.m in Sources */,
+				DB0A266E193B48B600234D4F /* Issue.m in Sources */,
 				DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */,
 				DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */,
-				DB215F691938DB5B00422589 /* Series.m in Sources */,
+				DB0A2671193B48B600234D4F /* Trade.m in Sources */,
 				DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */,
 				DBD38292193526DA00C8965C /* AppDelegate.m in Sources */,
-				DB215F661938DB5B00422589 /* Publisher.m in Sources */,
 				DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */,
 				DBD3828B193526DA00C8965C /* main.m in Sources */,
 				DBD382BC193529E800C8965C /* NewComicWindow.m in Sources */,

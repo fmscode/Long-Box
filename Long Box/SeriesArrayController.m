@@ -18,6 +18,14 @@
 
 @implementation SeriesArrayController
 
+- (id)init{
+    self = [super init];
+    if (self){
+        self.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
+    }
+    return self;
+}
+
 - (IBAction)search:(id)sender{
     searchString = [sender stringValue];
     [self rearrangeObjects];

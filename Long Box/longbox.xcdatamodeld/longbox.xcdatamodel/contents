@@ -14,10 +14,17 @@
         <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="issues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Issue" inverseName="series" inverseEntity="Issue" syncable="YES"/>
         <relationship name="publisher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Publisher" inverseName="series" inverseEntity="Publisher" syncable="YES"/>
+        <relationship name="trades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trade" inverseName="series" inverseEntity="Trade" syncable="YES"/>
+    </entity>
+    <entity name="Trade" representedClassName="Trade" syncable="YES">
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="trades" inverseEntity="Series" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Issue" positionX="306" positionY="-184" width="128" height="103"/>
-        <element name="Publisher" positionX="115" positionY="-315" width="128" height="73"/>
-        <element name="Series" positionX="117" positionY="-180" width="128" height="88"/>
+        <element name="Issue" positionX="331" positionY="-184" width="128" height="103"/>
+        <element name="Publisher" positionX="-56" positionY="-180" width="128" height="73"/>
+        <element name="Series" positionX="117" positionY="-180" width="128" height="103"/>
+        <element name="Trade" positionX="306" positionY="-63" width="128" height="88"/>
     </elements>
 </model>

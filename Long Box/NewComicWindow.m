@@ -11,7 +11,7 @@
 #import "Issue.h"
 #import "Publisher.h"
 #import "Series.h"
-
+#import "Trade.h"
 
 @interface NewComicWindow () <NSComboBoxDataSource,NSComboBoxDelegate,NSTokenFieldDelegate>{
 
@@ -23,6 +23,9 @@
 @property (nonatomic) IBOutlet NSComboBox *seriesBox;
 @property (nonatomic) IBOutlet NSComboBox *publisherBox;
 @property (nonatomic) IBOutlet NSTextView *notesField;
+@property (nonatomic) IBOutlet NSTextField *tpbTitleField;
+@property (nonatomic) IBOutlet NSTabView *tabView;
+
 - (IBAction)cancelNew:(id)sender;
 - (IBAction)saveComic:(id)sender;
 
@@ -64,6 +67,7 @@
 }
 #pragma mark - Class Actions
 - (IBAction)saveComic:(id)sender{
+    
     NSManagedObjectContext *context = [[CoreDataManagerX sharedInstance] managedObjectContext];
     NSString *publisher = _publisherBox.stringValue;
     NSString *seriesString = _seriesBox.stringValue;
@@ -89,11 +93,19 @@
         series.title = seriesString;
         series.publisher = pub;
     }
-    Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:context];
-    newIssue.issueNumber = _issueNumber.stringValue;
-    newIssue.publishDate = _publishDate.dateValue;
-    newIssue.series = series;
-    newIssue.note = _notesField.string;
+    
+    if ([_tabView.selectedTabViewItem.identifier isEqualToString:@"1"]){
+        Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:context];
+        newIssue.issueNumber = _issueNumber.stringValue;
+        newIssue.publishDate = _publishDate.dateValue;
+        newIssue.series = series;
+        newIssue.note = _notesField.string;
+    }else{
+        Trade *newTrade = [NSEntityDescription insertNewObjectForEntityForName:@"Trade" inManagedObjectContext:context];
+        newTrade.title = _tpbTitleField.stringValue;
+        newTrade.series = series;
+        newTrade.note = _notesField.string;
+    }
     
     [[CoreDataManagerX sharedInstance] saveContext];
     [self clearUI];

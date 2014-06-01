@@ -1,5 +1,5 @@
 //
-//  Issue.h
+//  Trade.h
 //  Long Box
 //
 //  Created by Frank Michael on 6/1/14.
@@ -11,11 +11,10 @@
 
 @class Series;
 
-@interface Issue : NSManagedObject
+@interface Trade : NSManagedObject
 
-@property (nonatomic, retain) NSString * issueNumber;
+@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * note;
-@property (nonatomic, retain) NSDate * publishDate;
 @property (nonatomic, retain) Series *series;
 
 @end

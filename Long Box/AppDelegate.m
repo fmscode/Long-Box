@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CoreDataManagerX.h"
+#import "Trade.h"
 
 @implementation AppDelegate
 
@@ -28,21 +29,11 @@
 //    newIssue.series = newSeries;
 //    [[CoreDataManagerX sharedInstance] saveContext];
     
-    
+    */
 
-    NSFetchRequest *issues = [NSFetchRequest fetchRequestWithEntityName:@"Issue"];
+    NSFetchRequest *issues = [NSFetchRequest fetchRequestWithEntityName:@"Trade"];
     NSArray *issuesArray = [[[CoreDataManagerX sharedInstance] managedObjectContext] executeFetchRequest:issues error:nil];
-    NSLog(@"%lu",issuesArray.count);
-    [issuesArray enumerateObjectsUsingBlock:^(Issue *issue, NSUInteger idx, BOOL *stop) {
-        if (!issue.series){
-            [_managedObjectContext deleteObject:issue];
-            [_managedObjectContext save:nil];
-        }
-//        issue.publishDate = [NSDate date];
-//        [_managedObjectContext save:nil];
-        NSLog(@"%@",[issue issueNumber]);
-    }];
-     */
+//    NSLog(@"%@",[(Trade *)issuesArray[0] series]);
 }
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
 {
