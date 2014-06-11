@@ -117,6 +117,9 @@
 }
 - (IBAction)addSecondComic:(id)sender{
     [self saveComicData];
+    _issueNumber.stringValue = @"";
+    _publishDate.stringValue = @"";
+    _tpbTitleField.stringValue = @"";
 }
 - (IBAction)cancelNew:(id)sender{
     [self clearUI];
