@@ -2,7 +2,7 @@
 //  Issue.h
 //  Long Box
 //
-//  Created by Frank Michael on 6/1/14.
+//  Created by Frank Michael on 6/12/14.
 //  Copyright (c) 2014 Frank Michael Sanchez. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSString * issueNumber;
 @property (nonatomic, retain) NSString * note;
 @property (nonatomic, retain) NSString * publishDate;
+@property (nonatomic, retain) NSNumber * variant;
 @property (nonatomic, retain) Series *series;
 
 @end

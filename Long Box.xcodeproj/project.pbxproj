@@ -13,9 +13,9 @@
 		DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4A1938C55F00422589 /* DateTransformer.m */; };
 		DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4D1938C65500422589 /* ComicsWindow.m */; };
 		DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F501938CA3700422589 /* SeriesArrayController.m */; };
-		DB5AA9D7193B790000960168 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9D6193B790000960168 /* Issue.m */; };
 		DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */; };
 		DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9DD193B7E5C00960168 /* TradesArrayController.m */; };
+		DB846B54194A069A00C472A7 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB846B53194A069A00C472A7 /* Issue.m */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD38287193526DA00C8965C /* InfoPlist.strings */; };
 		DBD3828B193526DA00C8965C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3828A193526DA00C8965C /* main.m */; };
@@ -56,12 +56,12 @@
 		DB215F4D1938C65500422589 /* ComicsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsWindow.m; sourceTree = "<group>"; };
 		DB215F4F1938CA3700422589 /* SeriesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesArrayController.h; sourceTree = "<group>"; };
 		DB215F501938CA3700422589 /* SeriesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriesArrayController.m; sourceTree = "<group>"; };
-		DB5AA9D5193B790000960168 /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
-		DB5AA9D6193B790000960168 /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
 		DB5AA9D8193B7D8700960168 /* IssuesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesArrayController.h; sourceTree = "<group>"; };
 		DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesArrayController.m; sourceTree = "<group>"; };
 		DB5AA9DC193B7E5C00960168 /* TradesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradesArrayController.h; sourceTree = "<group>"; };
 		DB5AA9DD193B7E5C00960168 /* TradesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradesArrayController.m; sourceTree = "<group>"; };
+		DB846B52194A069A00C472A7 /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
+		DB846B53194A069A00C472A7 /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
 		DBD3827B193526DA00C8965C /* Long Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Long Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3827E193526DA00C8965C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DBD38281193526DA00C8965C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -219,8 +219,8 @@
 				DB215F4A1938C55F00422589 /* DateTransformer.m */,
 				DB5AA9DB193B7E4E00960168 /* Array Controllers */,
 				DBD382B61935271400C8965C /* longbox.xcdatamodeld */,
-				DB5AA9D5193B790000960168 /* Issue.h */,
-				DB5AA9D6193B790000960168 /* Issue.m */,
+				DB846B52194A069A00C472A7 /* Issue.h */,
+				DB846B53194A069A00C472A7 /* Issue.m */,
 				DB0A266F193B48B600234D4F /* Trade.h */,
 				DB0A2670193B48B600234D4F /* Trade.m */,
 				DB0A2669193B48B600234D4F /* Series.h */,
@@ -333,11 +333,11 @@
 				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
 				DB0A2668193B48B500234D4F /* Publisher.m in Sources */,
 				DB0A266B193B48B600234D4F /* Series.m in Sources */,
-				DB5AA9D7193B790000960168 /* Issue.m in Sources */,
 				DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */,
 				DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */,
 				DB0A2671193B48B600234D4F /* Trade.m in Sources */,
 				DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */,
+				DB846B54194A069A00C472A7 /* Issue.m in Sources */,
 				DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */,
 				DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */,
 				DBD38292193526DA00C8965C /* AppDelegate.m in Sources */,

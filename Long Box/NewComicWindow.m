@@ -20,6 +20,7 @@
 @property (nonatomic) IBOutlet NSArrayController *publisherController;
 @property (nonatomic) IBOutlet NSTextField *issueNumber;
 @property (nonatomic) IBOutlet NSTextField *publishDate;
+@property (nonatomic) IBOutlet NSButton *variantCheck;
 @property (nonatomic) IBOutlet NSComboBox *seriesBox;
 @property (nonatomic) IBOutlet NSComboBox *publisherBox;
 @property (nonatomic) IBOutlet NSTextView *notesField;
@@ -94,13 +95,14 @@
         series.title = seriesString;
         series.publisher = pub;
     }
-    
+
     if ([_tabView.selectedTabViewItem.identifier isEqualToString:@"1"]){
         Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:context];
         newIssue.issueNumber = _issueNumber.stringValue;
         newIssue.publishDate = _publishDate.stringValue;
         newIssue.series = series;
         newIssue.note = _notesField.string;
+        newIssue.variant = @(_variantCheck.state);
     }else{
         Trade *newTrade = [NSEntityDescription insertNewObjectForEntityForName:@"Trade" inManagedObjectContext:context];
         newTrade.title = _tpbTitleField.stringValue;

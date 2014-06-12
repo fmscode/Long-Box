@@ -4,6 +4,7 @@
         <attribute name="issueNumber" attributeType="String" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="publishDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="variant" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="issues" inverseEntity="Series" syncable="YES"/>
     </entity>
     <entity name="Publisher" representedClassName="Publisher" syncable="YES">
@@ -22,7 +23,7 @@
         <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="trades" inverseEntity="Series" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Issue" positionX="331" positionY="-184" width="128" height="103"/>
+        <element name="Issue" positionX="304" positionY="-198" width="128" height="118"/>
         <element name="Publisher" positionX="-56" positionY="-180" width="128" height="73"/>
         <element name="Series" positionX="117" positionY="-180" width="128" height="103"/>
         <element name="Trade" positionX="306" positionY="-63" width="128" height="88"/>
