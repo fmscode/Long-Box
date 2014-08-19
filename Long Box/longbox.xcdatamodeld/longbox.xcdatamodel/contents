@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Issue" representedClassName="Issue" syncable="YES">
         <attribute name="issueNumber" attributeType="String" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="publishDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="variant" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="issues" inverseEntity="Series" syncable="YES"/>
+        <relationship name="storyArc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryArc" inverseName="issues" inverseEntity="StoryArc" syncable="YES"/>
     </entity>
     <entity name="Publisher" representedClassName="Publisher" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
@@ -15,17 +16,26 @@
         <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="issues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Issue" inverseName="series" inverseEntity="Issue" syncable="YES"/>
         <relationship name="publisher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Publisher" inverseName="series" inverseEntity="Publisher" syncable="YES"/>
+        <relationship name="storyArcs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StoryArc" inverseName="series" inverseEntity="StoryArc" syncable="YES"/>
         <relationship name="trades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trade" inverseName="series" inverseEntity="Trade" syncable="YES"/>
+    </entity>
+    <entity name="StoryArc" representedClassName="StoryArc" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="issues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Issue" inverseName="storyArc" inverseEntity="Issue" syncable="YES"/>
+        <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="storyArcs" inverseEntity="Series" syncable="YES"/>
+        <relationship name="trades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trade" inverseName="storyArc" inverseEntity="Trade" syncable="YES"/>
     </entity>
     <entity name="Trade" representedClassName="Trade" syncable="YES">
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="series" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Series" inverseName="trades" inverseEntity="Series" syncable="YES"/>
+        <relationship name="storyArc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoryArc" inverseName="trades" inverseEntity="StoryArc" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Issue" positionX="304" positionY="-198" width="128" height="118"/>
+        <element name="Issue" positionX="304" positionY="-342" width="128" height="133"/>
         <element name="Publisher" positionX="-56" positionY="-180" width="128" height="73"/>
-        <element name="Series" positionX="117" positionY="-180" width="128" height="103"/>
-        <element name="Trade" positionX="306" positionY="-63" width="128" height="88"/>
+        <element name="Series" positionX="117" positionY="-180" width="128" height="118"/>
+        <element name="StoryArc" positionX="358" positionY="-162" width="128" height="103"/>
+        <element name="Trade" positionX="306" positionY="-27" width="128" height="103"/>
     </elements>
 </model>

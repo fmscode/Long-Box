@@ -1,24 +1,22 @@
 //
-//  Series.m
+//  StoryArc.m
 //  Long Box
 //
 //  Created by Frank Michael on 8/19/14.
 //  Copyright (c) 2014 Frank Michael Sanchez. All rights reserved.
 //
 
-#import "Series.h"
-#import "Issue.h"
-#import "Publisher.h"
 #import "StoryArc.h"
+#import "Issue.h"
+#import "Series.h"
 #import "Trade.h"
 
 
-@implementation Series
+@implementation StoryArc
 
 @dynamic title;
 @dynamic issues;
-@dynamic publisher;
-@dynamic storyArcs;
+@dynamic series;
 @dynamic trades;
 
 @end

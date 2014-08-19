@@ -12,6 +12,7 @@
 #import "Publisher.h"
 #import "Series.h"
 #import "Trade.h"
+#import "StoryArc.h"
 
 @interface NewComicWindow () <NSComboBoxDataSource,NSComboBoxDelegate,NSTokenFieldDelegate>{
 
@@ -23,6 +24,7 @@
 @property (nonatomic) IBOutlet NSButton *variantCheck;
 @property (nonatomic) IBOutlet NSComboBox *seriesBox;
 @property (nonatomic) IBOutlet NSComboBox *publisherBox;
+@property (nonatomic) IBOutlet NSComboBox *storyArcBox;
 @property (nonatomic) IBOutlet NSTextView *notesField;
 @property (nonatomic) IBOutlet NSTextField *tpbTitleField;
 @property (nonatomic) IBOutlet NSTabView *tabView;
@@ -73,6 +75,7 @@
     NSManagedObjectContext *context = [[CoreDataManagerX sharedInstance] managedObjectContext];
     NSString *publisher = _publisherBox.stringValue;
     NSString *seriesString = _seriesBox.stringValue;
+    NSString *storyString = _storyArcBox.stringValue;
     
     NSFetchRequest *pubFetch = [NSFetchRequest fetchRequestWithEntityName:@"Publisher"];
     pubFetch.predicate = [NSPredicate predicateWithFormat:@"name LIKE[cd] %@" argumentArray:@[publisher]];
@@ -95,6 +98,20 @@
         series.title = seriesString;
         series.publisher = pub;
     }
+    
+    StoryArc *storyArc = nil;
+    if (storyString.length > 0){
+        NSFetchRequest *storyFetch = [NSFetchRequest fetchRequestWithEntityName:@"StoryArc"];
+        storyFetch.predicate = [NSPredicate predicateWithFormat:@"title LIKE[cd] %@" argumentArray:@[storyString]];
+        NSArray *storyFound = [context executeFetchRequest:storyFetch error:nil];
+        if (storyFound.count > 0){
+            storyArc = storyFound.lastObject;
+        }else{
+            storyArc = [NSEntityDescription insertNewObjectForEntityForName:@"StoryArc" inManagedObjectContext:context];
+            storyArc.title = storyString;
+            storyArc.series = series;
+        }
+    }
 
     if ([_tabView.selectedTabViewItem.identifier isEqualToString:@"1"]){
         Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:context];
@@ -103,11 +120,17 @@
         newIssue.series = series;
         newIssue.note = _notesField.string;
         newIssue.variant = @(_variantCheck.state);
+        if (storyArc){
+            [storyArc addIssuesObject:newIssue];
+        }
     }else{
         Trade *newTrade = [NSEntityDescription insertNewObjectForEntityForName:@"Trade" inManagedObjectContext:context];
         newTrade.title = _tpbTitleField.stringValue;
         newTrade.series = series;
         newTrade.note = _notesField.string;
+        if (storyArc){
+            [storyArc addTradesObject:newTrade];
+        }
     }
     
     [[CoreDataManagerX sharedInstance] saveContext];
