@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>gradeNum</key>
+        <string>10.0</string>
+        <key>visibleGrade</key>
+        <string>Gem Mint</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>9.9</string>
+        <key>visibleGrade</key>
+        <string>Mint</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>9.8</string>
+        <key>visibleGrade</key>
+        <string>Near Mint/Mint</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>9.6</string>
+        <key>visibleGrade</key>
+        <string>Near Mint + </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>9.4</string>
+        <key>visibleGrade</key>
+        <string>Near Mint</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>9.2</string>
+        <key>visibleGrade</key>
+        <string>Near Mint - </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>9.0</string>
+        <key>visibleGrade</key>
+        <string>Very Fine/Near Mint </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>8.5</string>
+        <key>visibleGrade</key>
+        <string>Very Fine + </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>8.0</string>
+        <key>visibleGrade</key>
+        <string>Very Fine </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>7.5</string>
+        <key>visibleGrade</key>
+        <string>Very Fine -</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>7.0</string>
+        <key>visibleGrade</key>
+        <string>Fine/Very Fine </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>6.5</string>
+        <key>visibleGrade</key>
+        <string>Fine + </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>6.0</string>
+        <key>visibleGrade</key>
+        <string>Fine</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>5.5</string>
+        <key>visibleGrade</key>
+        <string>Fine - </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>5.0</string>
+        <key>visibleGrade</key>
+        <string>Very Good/Fine </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>4.5</string>
+        <key>visibleGrade</key>
+        <string>Very Good + </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>4.0</string>
+        <key>visibleGrade</key>
+        <string>Very Good </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>3.5</string>
+        <key>visibleGrade</key>
+        <string>Very Good - </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>3.0</string>
+        <key>visibleGrade</key>
+        <string>Good/Very Good </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>2.5</string>
+        <key>visibleGrade</key>
+        <string>Good + </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>2.0</string>
+        <key>visibleGrade</key>
+        <string>Good</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>1.8</string>
+        <key>visibleGrade</key>
+        <string>Good - </string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>1.5</string>
+        <key>visibleGrade</key>
+        <string>Fair/Good</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>1.0</string>
+        <key>visibleGrade</key>
+        <string>Fair</string>
+    </dict>
+    <dict>
+        <key>gradeNum</key>
+        <string>5</string>
+        <key>visibleGrade</key>
+        <string>Poor</string>
+    </dict>
+</array>
+</plist>

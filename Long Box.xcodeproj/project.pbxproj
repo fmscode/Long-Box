@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB0699FB19B7A21E00912D2D /* gradescale.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0699FA19B7A21E00912D2D /* gradescale.plist */; };
+		DB0699FE19B7A54600912D2D /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0699FD19B7A54600912D2D /* Trade.m */; };
+		DB069A0119B7A54600912D2D /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0019B7A54600912D2D /* Issue.m */; };
+		DB069A0419B7A54600912D2D /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0319B7A54600912D2D /* Publisher.m */; };
+		DB069A0719B7A54600912D2D /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0619B7A54600912D2D /* Series.m */; };
+		DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0919B7A54600912D2D /* StoryArc.m */; };
 		DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4A1938C55F00422589 /* DateTransformer.m */; };
 		DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4D1938C65500422589 /* ComicsWindow.m */; };
 		DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F501938CA3700422589 /* SeriesArrayController.m */; };
 		DB23D0D719A20F8F00083C45 /* StoryArcsArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB23D0D619A20F8F00083C45 /* StoryArcsArrayController.m */; };
+		DB52600D19B4EE1900FF31EB /* VariantIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB52600C19B4EE1900FF31EB /* VariantIndicator.m */; };
 		DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */; };
 		DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9DD193B7E5C00960168 /* TradesArrayController.m */; };
-		DBADFD2C19A3608500C3C01B /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADFD2B19A3608500C3C01B /* Publisher.m */; };
-		DBADFD2F19A3608500C3C01B /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADFD2E19A3608500C3C01B /* Series.m */; };
-		DBADFD3219A3608500C3C01B /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADFD3119A3608500C3C01B /* StoryArc.m */; };
-		DBADFD3519A3608500C3C01B /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADFD3419A3608500C3C01B /* Trade.m */; };
-		DBADFD3819A3608500C3C01B /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DBADFD3719A3608500C3C01B /* Issue.m */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD38287193526DA00C8965C /* InfoPlist.strings */; };
 		DBD3828B193526DA00C8965C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3828A193526DA00C8965C /* main.m */; };
@@ -46,6 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB0699FA19B7A21E00912D2D /* gradescale.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gradescale.plist; sourceTree = "<group>"; };
+		DB0699FC19B7A54600912D2D /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
+		DB0699FD19B7A54600912D2D /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
+		DB0699FF19B7A54600912D2D /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
+		DB069A0019B7A54600912D2D /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
+		DB069A0219B7A54600912D2D /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
+		DB069A0319B7A54600912D2D /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
+		DB069A0519B7A54600912D2D /* Series.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Series.h; sourceTree = "<group>"; };
+		DB069A0619B7A54600912D2D /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
+		DB069A0819B7A54600912D2D /* StoryArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryArc.h; sourceTree = "<group>"; };
+		DB069A0919B7A54600912D2D /* StoryArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArc.m; sourceTree = "<group>"; };
 		DB215F491938C55F00422589 /* DateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTransformer.h; sourceTree = "<group>"; };
 		DB215F4A1938C55F00422589 /* DateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTransformer.m; sourceTree = "<group>"; };
 		DB215F4C1938C65500422589 /* ComicsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsWindow.h; sourceTree = "<group>"; };
@@ -55,20 +68,12 @@
 		DB23D0D419A20F4000083C45 /* Long Box.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Long Box.entitlements"; sourceTree = "<group>"; };
 		DB23D0D519A20F8F00083C45 /* StoryArcsArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryArcsArrayController.h; sourceTree = "<group>"; };
 		DB23D0D619A20F8F00083C45 /* StoryArcsArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArcsArrayController.m; sourceTree = "<group>"; };
+		DB52600B19B4EE1900FF31EB /* VariantIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantIndicator.h; sourceTree = "<group>"; };
+		DB52600C19B4EE1900FF31EB /* VariantIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantIndicator.m; sourceTree = "<group>"; };
 		DB5AA9D8193B7D8700960168 /* IssuesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesArrayController.h; sourceTree = "<group>"; };
 		DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesArrayController.m; sourceTree = "<group>"; };
 		DB5AA9DC193B7E5C00960168 /* TradesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradesArrayController.h; sourceTree = "<group>"; };
 		DB5AA9DD193B7E5C00960168 /* TradesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradesArrayController.m; sourceTree = "<group>"; };
-		DBADFD2A19A3608500C3C01B /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
-		DBADFD2B19A3608500C3C01B /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
-		DBADFD2D19A3608500C3C01B /* Series.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Series.h; sourceTree = "<group>"; };
-		DBADFD2E19A3608500C3C01B /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
-		DBADFD3019A3608500C3C01B /* StoryArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryArc.h; sourceTree = "<group>"; };
-		DBADFD3119A3608500C3C01B /* StoryArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArc.m; sourceTree = "<group>"; };
-		DBADFD3319A3608500C3C01B /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
-		DBADFD3419A3608500C3C01B /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
-		DBADFD3619A3608500C3C01B /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
-		DBADFD3719A3608500C3C01B /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
 		DBD3827B193526DA00C8965C /* Long Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Long Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3827E193526DA00C8965C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DBD38281193526DA00C8965C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -183,6 +188,9 @@
 				DBD382B9193529E800C8965C /* NewComicWindow.h */,
 				DBD382BA193529E800C8965C /* NewComicWindow.m */,
 				DBD382BB193529E800C8965C /* NewComicWindow.xib */,
+				DB52600B19B4EE1900FF31EB /* VariantIndicator.h */,
+				DB52600C19B4EE1900FF31EB /* VariantIndicator.m */,
+				DB0699FA19B7A21E00912D2D /* gradescale.plist */,
 				DBD382B51935270000C8965C /* Core Data */,
 				DBD38296193526DA00C8965C /* Images.xcassets */,
 				DBD38285193526DA00C8965C /* Supporting Files */,
@@ -229,16 +237,16 @@
 				DB215F4A1938C55F00422589 /* DateTransformer.m */,
 				DB5AA9DB193B7E4E00960168 /* Array Controllers */,
 				DBD382B61935271400C8965C /* longbox.xcdatamodeld */,
-				DBADFD3619A3608500C3C01B /* Issue.h */,
-				DBADFD3719A3608500C3C01B /* Issue.m */,
-				DBADFD3319A3608500C3C01B /* Trade.h */,
-				DBADFD3419A3608500C3C01B /* Trade.m */,
-				DBADFD3019A3608500C3C01B /* StoryArc.h */,
-				DBADFD3119A3608500C3C01B /* StoryArc.m */,
-				DBADFD2D19A3608500C3C01B /* Series.h */,
-				DBADFD2E19A3608500C3C01B /* Series.m */,
-				DBADFD2A19A3608500C3C01B /* Publisher.h */,
-				DBADFD2B19A3608500C3C01B /* Publisher.m */,
+				DB069A0819B7A54600912D2D /* StoryArc.h */,
+				DB069A0919B7A54600912D2D /* StoryArc.m */,
+				DB069A0519B7A54600912D2D /* Series.h */,
+				DB069A0619B7A54600912D2D /* Series.m */,
+				DB069A0219B7A54600912D2D /* Publisher.h */,
+				DB069A0319B7A54600912D2D /* Publisher.m */,
+				DB0699FF19B7A54600912D2D /* Issue.h */,
+				DB069A0019B7A54600912D2D /* Issue.m */,
+				DB0699FC19B7A54600912D2D /* Trade.h */,
+				DB0699FD19B7A54600912D2D /* Trade.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */,
+				DB0699FB19B7A21E00912D2D /* gradescale.plist in Resources */,
 				DBD38297193526DA00C8965C /* Images.xcassets in Resources */,
 				DBD3828F193526DA00C8965C /* Credits.rtf in Resources */,
 				DBD382BD193529E800C8965C /* NewComicWindow.xib in Resources */,
@@ -350,21 +359,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBADFD2F19A3608500C3C01B /* Series.m in Sources */,
 				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
+				DB069A0419B7A54600912D2D /* Publisher.m in Sources */,
+				DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */,
 				DB23D0D719A20F8F00083C45 /* StoryArcsArrayController.m in Sources */,
 				DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */,
-				DBADFD3219A3608500C3C01B /* StoryArc.m in Sources */,
 				DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */,
-				DBADFD2C19A3608500C3C01B /* Publisher.m in Sources */,
 				DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */,
 				DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */,
-				DBADFD3519A3608500C3C01B /* Trade.m in Sources */,
 				DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */,
-				DBADFD3819A3608500C3C01B /* Issue.m in Sources */,
+				DB069A0119B7A54600912D2D /* Issue.m in Sources */,
 				DBD38292193526DA00C8965C /* AppDelegate.m in Sources */,
 				DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */,
+				DB52600D19B4EE1900FF31EB /* VariantIndicator.m in Sources */,
 				DBD3828B193526DA00C8965C /* main.m in Sources */,
+				DB0699FE19B7A54600912D2D /* Trade.m in Sources */,
+				DB069A0719B7A54600912D2D /* Series.m in Sources */,
 				DBD382BC193529E800C8965C /* NewComicWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

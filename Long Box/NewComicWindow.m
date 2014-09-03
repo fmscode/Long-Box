@@ -28,7 +28,8 @@
 @property (nonatomic) IBOutlet NSTextView *notesField;
 @property (nonatomic) IBOutlet NSTextField *tpbTitleField;
 @property (nonatomic) IBOutlet NSTabView *tabView;
-
+@property (nonatomic) IBOutlet NSPopUpButton *conditionOptions;
+@property (nonatomic) NSArray *conditions;
 - (IBAction)cancelNew:(id)sender;
 - (IBAction)saveComic:(id)sender;
 - (IBAction)addSecondComic:(id)sender;
@@ -45,8 +46,14 @@
     return self;
 }
 - (void)windowDidLoad{
-    [super windowDidLoad];    
-
+    [super windowDidLoad];
+    [self.conditionOptions removeAllItems];
+    NSString *conditionFile = [[NSBundle mainBundle] pathForResource:@"gradescale" ofType:@"plist"];
+    self.conditions = [[NSArray alloc] initWithContentsOfFile:conditionFile];
+    for (NSDictionary *condition in self.conditions) {
+        NSString *conditionTitle = [NSString stringWithFormat:@"%@ (%@)",condition[@"visibleGrade"],condition[@"gradeNum"]];
+        [self.conditionOptions addItemWithTitle:conditionTitle];
+    }
 }
 #pragma mark - Class
 - (void)clearUI{
@@ -112,6 +119,7 @@
             storyArc.series = series;
         }
     }
+    
 
     if ([_tabView.selectedTabViewItem.identifier isEqualToString:@"1"]){
         Issue *newIssue = [NSEntityDescription insertNewObjectForEntityForName:@"Issue" inManagedObjectContext:context];
@@ -120,6 +128,7 @@
         newIssue.series = series;
         newIssue.note = _notesField.string;
         newIssue.variant = @(_variantCheck.state);
+        newIssue.condition = [self.conditionOptions titleOfSelectedItem];
         if (storyArc){
             [storyArc addIssuesObject:newIssue];
         }
@@ -128,6 +137,7 @@
         newTrade.title = _tpbTitleField.stringValue;
         newTrade.series = series;
         newTrade.note = _notesField.string;
+        newTrade.condition = [self.conditionOptions titleOfSelectedItem];
         if (storyArc){
             [storyArc addTradesObject:newTrade];
         }

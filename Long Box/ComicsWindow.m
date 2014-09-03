@@ -38,4 +38,8 @@
     }];
 }
 
+- (IBAction)removeComic:(id)sender{
+    
+}
+
 @end
