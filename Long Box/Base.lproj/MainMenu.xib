@@ -18,6 +18,7 @@
         </customObject>
         <customObject id="DiI-63-z8V" customClass="ComicsWindow">
             <connections>
+                <outlet property="issuesTable" destination="CAb-jl-mQ8" id="QTM-gs-f4s"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="Ooz-du-Spf"/>
             </connections>
         </customObject>

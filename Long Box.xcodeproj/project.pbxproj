@@ -13,6 +13,8 @@
 		DB069A0419B7A54600912D2D /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0319B7A54600912D2D /* Publisher.m */; };
 		DB069A0719B7A54600912D2D /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0619B7A54600912D2D /* Series.m */; };
 		DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0919B7A54600912D2D /* StoryArc.m */; };
+		DB069A1119B7A6CA00912D2D /* EditIssueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */; };
+		DB069A1219B7A6CA00912D2D /* EditIssueWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */; };
 		DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4A1938C55F00422589 /* DateTransformer.m */; };
 		DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4D1938C65500422589 /* ComicsWindow.m */; };
 		DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F501938CA3700422589 /* SeriesArrayController.m */; };
@@ -59,6 +61,9 @@
 		DB069A0619B7A54600912D2D /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
 		DB069A0819B7A54600912D2D /* StoryArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryArc.h; sourceTree = "<group>"; };
 		DB069A0919B7A54600912D2D /* StoryArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArc.m; sourceTree = "<group>"; };
+		DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIssueWindow.h; sourceTree = "<group>"; };
+		DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIssueWindow.m; sourceTree = "<group>"; };
+		DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIssueWindow.xib; sourceTree = "<group>"; };
 		DB215F491938C55F00422589 /* DateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTransformer.h; sourceTree = "<group>"; };
 		DB215F4A1938C55F00422589 /* DateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTransformer.m; sourceTree = "<group>"; };
 		DB215F4C1938C65500422589 /* ComicsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsWindow.h; sourceTree = "<group>"; };
@@ -188,6 +193,9 @@
 				DBD382B9193529E800C8965C /* NewComicWindow.h */,
 				DBD382BA193529E800C8965C /* NewComicWindow.m */,
 				DBD382BB193529E800C8965C /* NewComicWindow.xib */,
+				DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */,
+				DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */,
+				DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */,
 				DB52600B19B4EE1900FF31EB /* VariantIndicator.h */,
 				DB52600C19B4EE1900FF31EB /* VariantIndicator.m */,
 				DB0699FA19B7A21E00912D2D /* gradescale.plist */,
@@ -339,6 +347,7 @@
 				DB0699FB19B7A21E00912D2D /* gradescale.plist in Resources */,
 				DBD38297193526DA00C8965C /* Images.xcassets in Resources */,
 				DBD3828F193526DA00C8965C /* Credits.rtf in Resources */,
+				DB069A1219B7A6CA00912D2D /* EditIssueWindow.xib in Resources */,
 				DBD382BD193529E800C8965C /* NewComicWindow.xib in Resources */,
 				DBD38295193526DA00C8965C /* MainMenu.xib in Resources */,
 			);
@@ -374,6 +383,7 @@
 				DB52600D19B4EE1900FF31EB /* VariantIndicator.m in Sources */,
 				DBD3828B193526DA00C8965C /* main.m in Sources */,
 				DB0699FE19B7A54600912D2D /* Trade.m in Sources */,
+				DB069A1119B7A6CA00912D2D /* EditIssueWindow.m in Sources */,
 				DB069A0719B7A54600912D2D /* Series.m in Sources */,
 				DBD382BC193529E800C8965C /* NewComicWindow.m in Sources */,
 			);

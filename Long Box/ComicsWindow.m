@@ -12,11 +12,18 @@
 #import "Publisher.h"
 #import "CoreDataManagerX.h"
 #import "Issue.h"
+#import "EditIssueWindow.h"
 
 @interface ComicsWindow () {
-    NewComicWindow *newWindow;
+    
 }
+
+@property (nonatomic) NewComicWindow *comicNewWindow;
+@property (nonatomic) EditIssueWindow *editWindow;
+@property (nonatomic) IBOutlet NSTableView *issuesTable;
+
 - (IBAction)addComic:(id)sender;
+- (IBAction)editIssue:(id)sender;
 
 @end
 
@@ -30,14 +37,22 @@
     }
     return self;
 }
+- (void)windowDidLoad{
+    [super windowDidLoad];
+}
 
 - (IBAction)addComic:(id)sender{
-    newWindow = [[NewComicWindow alloc] initWithWindowNibName:@"NewComicWindow"];
-    [self.window beginSheet:newWindow.window completionHandler:^(NSModalResponse returnCode) {
+    self.comicNewWindow = [[NewComicWindow alloc] initWithWindowNibName:@"NewComicWindow"];
+    [self.window beginSheet:self.comicNewWindow.window completionHandler:^(NSModalResponse returnCode) {
         
     }];
 }
-
+- (IBAction)editIssue:(id)sender{
+    self.editWindow = [[EditIssueWindow alloc] initWithWindowNibName:@"EditIssueWindow"];
+    [self.window beginSheet:self.editWindow.window completionHandler:^(NSModalResponse returnCode) {
+        
+    }];
+}
 - (IBAction)removeComic:(id)sender{
     
 }

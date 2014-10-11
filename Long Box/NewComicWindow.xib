@@ -173,11 +173,11 @@
                         <tabViewItems>
                             <tabViewItem label="Issue" identifier="1" id="v33-wl-BZo">
                                 <view key="view" ambiguous="YES" id="y9o-Jr-V83">
-                                    <rect key="frame" x="10" y="33" width="113" height="0.0"/>
+                                    <rect key="frame" x="10" y="33" width="431" height="375"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crm-Yt-qCY">
-                                            <rect key="frame" x="115" y="-46" width="97" height="18"/>
+                                            <rect key="frame" x="115" y="329" width="97" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Issue Number" id="OIm-2C-p3i">
                                                 <font key="font" metaFont="system" size="14"/>
@@ -186,7 +186,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3tJ-U2-wcH">
-                                            <rect key="frame" x="218" y="-48" width="96" height="22"/>
+                                            <rect key="frame" x="218" y="327" width="96" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ORk-9c-yRI">
                                                 <font key="font" metaFont="system"/>
@@ -195,7 +195,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYY-rF-rkk">
-                                            <rect key="frame" x="123" y="-81" width="89" height="18"/>
+                                            <rect key="frame" x="123" y="294" width="89" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Publish Date" id="o9Y-2j-WBF">
                                                 <font key="font" metaFont="system" size="14"/>
@@ -204,7 +204,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8on-kM-V4L">
-                                            <rect key="frame" x="218" y="-83" width="96" height="22"/>
+                                            <rect key="frame" x="218" y="292" width="96" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="dfS-Wo-CGi">
                                                 <font key="font" metaFont="system"/>
@@ -213,7 +213,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gGh-vk-Xqy">
-                                            <rect key="frame" x="216" y="-113" width="33" height="18"/>
+                                            <rect key="frame" x="216" y="262" width="33" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="only" alignment="left" inset="2" id="DKF-yd-Mbu">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -221,7 +221,7 @@
                                             </buttonCell>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qL-OF-fow">
-                                            <rect key="frame" x="123" y="-113" width="89" height="18"/>
+                                            <rect key="frame" x="123" y="262" width="89" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Variant" id="8vZ-LA-plv">
                                                 <font key="font" metaFont="system" size="14"/>
