@@ -6,7 +6,6 @@
 //
 
 #import "CoreDataManagerX.h"
-@import CoreData;
 
 NSString * const dataModel = @"longbox";
 NSString * const bundleId = @"com.fmscode.longbox";
@@ -115,7 +114,7 @@ NSString * const bundleId = @"com.fmscode.longbox";
     
     NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.storedata",dataModel]];
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
-    if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
+    if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:nil error:&error]) {
         [[NSApplication sharedApplication] presentError:error];
         return nil;
     }

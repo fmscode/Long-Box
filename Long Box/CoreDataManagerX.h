@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@import CoreData;
 
 @interface CoreDataManagerX : NSObject
 
