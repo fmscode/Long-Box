@@ -20,10 +20,14 @@
 
 @property (nonatomic) NewComicWindow *comicNewWindow;
 @property (nonatomic) EditIssueWindow *editWindow;
+@property (weak) IBOutlet NSSegmentedControl *dataControl;
+@property (weak) IBOutlet NSTabView *dataTabView;
 @property (nonatomic) IBOutlet NSTableView *issuesTable;
 
 - (IBAction)addComic:(id)sender;
 - (IBAction)editIssue:(id)sender;
+
+- (IBAction)changeInformation:(id)sender;
 
 @end
 
@@ -52,6 +56,9 @@
     [self.window beginSheet:self.editWindow.window completionHandler:^(NSModalResponse returnCode) {
         
     }];
+}
+- (IBAction)changeInformation:(id)sender{
+    [self.dataTabView selectTabViewItemAtIndex:self.dataControl.selectedSegment];
 }
 - (IBAction)removeComic:(id)sender{
 

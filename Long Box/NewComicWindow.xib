@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NewComicWindow">
@@ -27,7 +28,7 @@
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="872" height="485"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="872" height="485"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -91,11 +92,11 @@
                         </connections>
                     </comboBox>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-EF-2cV">
-                        <rect key="frame" x="761" y="6" width="91" height="25"/>
+                        <rect key="frame" x="755" y="1" width="103" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="91" id="AHh-TS-o60"/>
                         </constraints>
-                        <buttonCell key="cell" type="roundTextured" title="Save" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hgh-5Q-fuS">
+                        <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hgh-5Q-fuS">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -104,11 +105,11 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-3S-akG">
-                        <rect key="frame" x="20" y="6" width="91" height="25"/>
+                        <rect key="frame" x="14" y="1" width="103" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="91" id="raC-2q-g4o"/>
                         </constraints>
-                        <buttonCell key="cell" type="roundTextured" title="Done" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8xR-2j-QOW">
+                        <buttonCell key="cell" type="push" title="Done" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8xR-2j-QOW">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -241,12 +242,12 @@
                         </tabViewItems>
                     </tabView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LND-Rp-Glv">
-                        <rect key="frame" x="628" y="6" width="117" height="25"/>
+                        <rect key="frame" x="622" y="2" width="129" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="oDq-8b-IoN"/>
                             <constraint firstAttribute="width" constant="117" id="oGY-Bd-3GC"/>
                         </constraints>
-                        <buttonCell key="cell" type="roundTextured" title="Add Second" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OKN-wC-Rpl">
+                        <buttonCell key="cell" type="push" title="Add Second" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OKN-wC-Rpl">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -286,10 +287,10 @@
                     <constraint firstItem="q6F-3S-akG" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="z9a-bS-cfQ"/>
                 </constraints>
             </view>
-            <contentBorderThickness minY="40"/>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="476" y="377.5"/>
         </window>
         <arrayController mode="entity" entityName="Series" editable="NO" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" id="Qg1-td-FeK" userLabel="Series">
             <connections>

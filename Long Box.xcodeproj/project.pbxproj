@@ -15,11 +15,11 @@
 		DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0919B7A54600912D2D /* StoryArc.m */; };
 		DB069A1119B7A6CA00912D2D /* EditIssueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */; };
 		DB069A1219B7A6CA00912D2D /* EditIssueWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */; };
-		DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4A1938C55F00422589 /* DateTransformer.m */; };
 		DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4D1938C65500422589 /* ComicsWindow.m */; };
 		DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F501938CA3700422589 /* SeriesArrayController.m */; };
 		DB23D0D719A20F8F00083C45 /* StoryArcsArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB23D0D619A20F8F00083C45 /* StoryArcsArrayController.m */; };
 		DB52600D19B4EE1900FF31EB /* VariantIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB52600C19B4EE1900FF31EB /* VariantIndicator.m */; };
+		DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEDE19F45556007FD894 /* DateTransformer.swift */; };
 		DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */; };
 		DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9DD193B7E5C00960168 /* TradesArrayController.m */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
@@ -64,8 +64,6 @@
 		DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIssueWindow.h; sourceTree = "<group>"; };
 		DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIssueWindow.m; sourceTree = "<group>"; };
 		DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIssueWindow.xib; sourceTree = "<group>"; };
-		DB215F491938C55F00422589 /* DateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTransformer.h; sourceTree = "<group>"; };
-		DB215F4A1938C55F00422589 /* DateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTransformer.m; sourceTree = "<group>"; };
 		DB215F4C1938C65500422589 /* ComicsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsWindow.h; sourceTree = "<group>"; };
 		DB215F4D1938C65500422589 /* ComicsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsWindow.m; sourceTree = "<group>"; };
 		DB215F4F1938CA3700422589 /* SeriesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesArrayController.h; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		DB23D0D619A20F8F00083C45 /* StoryArcsArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArcsArrayController.m; sourceTree = "<group>"; };
 		DB52600B19B4EE1900FF31EB /* VariantIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantIndicator.h; sourceTree = "<group>"; };
 		DB52600C19B4EE1900FF31EB /* VariantIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantIndicator.m; sourceTree = "<group>"; };
+		DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Long Box-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB57DEDE19F45556007FD894 /* DateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransformer.swift; sourceTree = "<group>"; };
 		DB5AA9D8193B7D8700960168 /* IssuesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesArrayController.h; sourceTree = "<group>"; };
 		DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesArrayController.m; sourceTree = "<group>"; };
 		DB5AA9DC193B7E5C00960168 /* TradesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradesArrayController.h; sourceTree = "<group>"; };
@@ -241,8 +241,7 @@
 			children = (
 				DBD382B2193526E300C8965C /* CoreDataManagerX.h */,
 				DBD382B3193526E300C8965C /* CoreDataManagerX.m */,
-				DB215F491938C55F00422589 /* DateTransformer.h */,
-				DB215F4A1938C55F00422589 /* DateTransformer.m */,
+				DB57DEDE19F45556007FD894 /* DateTransformer.swift */,
 				DB5AA9DB193B7E4E00960168 /* Array Controllers */,
 				DBD382B61935271400C8965C /* longbox.xcdatamodeld */,
 				DB069A0819B7A54600912D2D /* StoryArc.h */,
@@ -255,6 +254,7 @@
 				DB069A0019B7A54600912D2D /* Issue.m */,
 				DB0699FC19B7A54600912D2D /* Trade.h */,
 				DB0699FD19B7A54600912D2D /* Trade.m */,
+				DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -370,10 +370,10 @@
 			files = (
 				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
 				DB069A0419B7A54600912D2D /* Publisher.m in Sources */,
+				DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */,
 				DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */,
 				DB23D0D719A20F8F00083C45 /* StoryArcsArrayController.m in Sources */,
 				DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */,
-				DB215F4B1938C55F00422589 /* DateTransformer.m in Sources */,
 				DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */,
 				DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */,
 				DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */,
@@ -517,13 +517,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Long Box/Long Box.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Long Box/Long Box-Prefix.pch";
 				INFOPLIST_FILE = "Long Box/Long Box-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Long Box/Long Box-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,13 +536,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Long Box/Long Box.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Long Box/Long Box-Prefix.pch";
 				INFOPLIST_FILE = "Long Box/Long Box-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Long Box/Long Box-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
