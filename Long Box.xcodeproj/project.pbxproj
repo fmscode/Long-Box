@@ -15,11 +15,11 @@
 		DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0919B7A54600912D2D /* StoryArc.m */; };
 		DB069A1119B7A6CA00912D2D /* EditIssueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */; };
 		DB069A1219B7A6CA00912D2D /* EditIssueWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */; };
-		DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F4D1938C65500422589 /* ComicsWindow.m */; };
 		DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB215F501938CA3700422589 /* SeriesArrayController.m */; };
 		DB23D0D719A20F8F00083C45 /* StoryArcsArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB23D0D619A20F8F00083C45 /* StoryArcsArrayController.m */; };
 		DB52600D19B4EE1900FF31EB /* VariantIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB52600C19B4EE1900FF31EB /* VariantIndicator.m */; };
 		DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEDE19F45556007FD894 /* DateTransformer.swift */; };
+		DB57DEE119F456DD007FD894 /* ComicsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEE019F456DD007FD894 /* ComicsWindow.swift */; };
 		DB5AA9DA193B7D8700960168 /* IssuesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */; };
 		DB5AA9DE193B7E5C00960168 /* TradesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5AA9DD193B7E5C00960168 /* TradesArrayController.m */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
@@ -64,8 +64,6 @@
 		DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIssueWindow.h; sourceTree = "<group>"; };
 		DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIssueWindow.m; sourceTree = "<group>"; };
 		DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIssueWindow.xib; sourceTree = "<group>"; };
-		DB215F4C1938C65500422589 /* ComicsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComicsWindow.h; sourceTree = "<group>"; };
-		DB215F4D1938C65500422589 /* ComicsWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComicsWindow.m; sourceTree = "<group>"; };
 		DB215F4F1938CA3700422589 /* SeriesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriesArrayController.h; sourceTree = "<group>"; };
 		DB215F501938CA3700422589 /* SeriesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriesArrayController.m; sourceTree = "<group>"; };
 		DB23D0D419A20F4000083C45 /* Long Box.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Long Box.entitlements"; sourceTree = "<group>"; };
@@ -75,6 +73,7 @@
 		DB52600C19B4EE1900FF31EB /* VariantIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantIndicator.m; sourceTree = "<group>"; };
 		DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Long Box-Bridging-Header.h"; sourceTree = "<group>"; };
 		DB57DEDE19F45556007FD894 /* DateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransformer.swift; sourceTree = "<group>"; };
+		DB57DEE019F456DD007FD894 /* ComicsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsWindow.swift; sourceTree = "<group>"; };
 		DB5AA9D8193B7D8700960168 /* IssuesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuesArrayController.h; sourceTree = "<group>"; };
 		DB5AA9D9193B7D8700960168 /* IssuesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuesArrayController.m; sourceTree = "<group>"; };
 		DB5AA9DC193B7E5C00960168 /* TradesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradesArrayController.h; sourceTree = "<group>"; };
@@ -188,8 +187,7 @@
 				DBD38290193526DA00C8965C /* AppDelegate.h */,
 				DBD38291193526DA00C8965C /* AppDelegate.m */,
 				DBD38293193526DA00C8965C /* MainMenu.xib */,
-				DB215F4C1938C65500422589 /* ComicsWindow.h */,
-				DB215F4D1938C65500422589 /* ComicsWindow.m */,
+				DB57DEE019F456DD007FD894 /* ComicsWindow.swift */,
 				DBD382B9193529E800C8965C /* NewComicWindow.h */,
 				DBD382BA193529E800C8965C /* NewComicWindow.m */,
 				DBD382BB193529E800C8965C /* NewComicWindow.xib */,
@@ -369,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
+				DB57DEE119F456DD007FD894 /* ComicsWindow.swift in Sources */,
 				DB069A0419B7A54600912D2D /* Publisher.m in Sources */,
 				DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */,
 				DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */,
@@ -379,7 +378,6 @@
 				DB215F511938CA3700422589 /* SeriesArrayController.m in Sources */,
 				DB069A0119B7A54600912D2D /* Issue.m in Sources */,
 				DBD38292193526DA00C8965C /* AppDelegate.m in Sources */,
-				DB215F4E1938C65500422589 /* ComicsWindow.m in Sources */,
 				DB52600D19B4EE1900FF31EB /* VariantIndicator.m in Sources */,
 				DBD3828B193526DA00C8965C /* main.m in Sources */,
 				DB0699FE19B7A54600912D2D /* Trade.m in Sources */,

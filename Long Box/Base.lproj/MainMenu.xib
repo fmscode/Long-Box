@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -16,40 +17,40 @@
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
-        <customObject id="DiI-63-z8V" customClass="ComicsWindow">
+        <customObject id="DiI-63-z8V" customClass="ComicsWindow" customModule="Long_Box" customModuleProvider="target">
             <connections>
-                <outlet property="dataControl" destination="V1G-1B-zsx" id="Mew-Nh-x1j"/>
-                <outlet property="dataTabView" destination="cwS-Yx-av7" id="CXk-H9-y8t"/>
-                <outlet property="issuesTable" destination="CAb-jl-mQ8" id="QTM-gs-f4s"/>
-                <outlet property="window" destination="QvC-M9-y7g" id="Ooz-du-Spf"/>
+                <outlet property="dataControl" destination="V1G-1B-zsx" id="Wxr-Cp-Mcn"/>
+                <outlet property="dataTabView" destination="cwS-Yx-av7" id="6ut-HB-ati"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="ZAO-yE-frk"/>
             </connections>
         </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <arrayController mode="entity" entityName="Series" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" id="a73-8C-MaW" userLabel="Series" customClass="SeriesArrayController">
             <connections>
-                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="managedObjectContext" id="0qO-xs-aeG"/>
+                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="uDO-qG-N5u"/>
             </connections>
         </arrayController>
         <arrayController mode="entity" entityName="Issue" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" automaticallyRearrangesObjects="YES" id="JCK-cE-HtR" userLabel="Issues Controller" customClass="IssuesArrayController">
             <connections>
-                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="managedObjectContext" id="KqA-2A-QG5"/>
+                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="QlB-fw-GQR"/>
                 <binding destination="a73-8C-MaW" name="contentSet" keyPath="selection.issues" id="uML-7F-ilD"/>
             </connections>
         </arrayController>
         <arrayController mode="entity" entityName="Trade" editable="NO" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" automaticallyRearrangesObjects="YES" id="Cju-kn-PXl" userLabel="Trade Controller" customClass="TradesArrayController">
             <connections>
-                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="managedObjectContext" id="D2M-F8-8SE"/>
+                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="ljw-0U-2in"/>
                 <binding destination="a73-8C-MaW" name="contentSet" keyPath="selection.trades" id="K8F-jv-kco"/>
             </connections>
         </arrayController>
         <arrayController id="iby-b7-bco" userLabel="Story Arcs" customClass="StoryArcsArrayController">
             <connections>
-                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="managedObjectContext" id="FtM-qG-YQ1"/>
+                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="GXm-aF-fVD"/>
                 <binding destination="a73-8C-MaW" name="contentSet" keyPath="selection.storyArcs" id="4Tf-PN-MGN"/>
             </connections>
         </arrayController>
         <arrayController mode="entity" entityName="Issue" editable="NO" automaticallyPreparesContent="YES" id="ne7-wm-FbN" userLabel="Story Arc Issues">
             <connections>
+                <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="S9Q-xF-b9P"/>
                 <binding destination="iby-b7-bco" name="contentSet" keyPath="selection.issues" id="ai7-CR-JAf"/>
             </connections>
         </arrayController>
@@ -105,7 +106,7 @@
                         <items>
                             <menuItem title="New" keyEquivalent="n" id="Was-JA-tGl">
                                 <connections>
-                                    <action selector="addComic:" target="DiI-63-z8V" id="mAp-1y-VPE"/>
+                                    <action selector="addComic:" target="DiI-63-z8V" id="rGt-B9-k0Y"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
@@ -600,7 +601,6 @@
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="42" rowSizeStyle="automatic" viewBased="YES" id="xiV-9r-eMa">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="238" height="134"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -940,7 +940,7 @@ ICA
                                             </segments>
                                         </segmentedCell>
                                         <connections>
-                                            <action selector="changeInformation:" target="DiI-63-z8V" id="8wd-1j-Sj3"/>
+                                            <action selector="changeInformation:" target="DiI-63-z8V" id="Kzs-37-VWj"/>
                                             <binding destination="a73-8C-MaW" name="hidden" keyPath="selection.title" id="2ce-CE-xwr">
                                                 <dictionary key="options">
                                                     <integer key="NSMultipleValuesPlaceholder" value="1"/>
@@ -961,7 +961,7 @@ ICA
                     </splitView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-744.5" y="359"/>
+            <point key="canvasLocation" x="-649.5" y="224"/>
         </window>
     </objects>
 </document>
