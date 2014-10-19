@@ -377,27 +377,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="811" height="648"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" id="Fhi-Bm-gSn">
-                        <rect key="frame" x="15" y="3" width="83" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <buttonCell key="cell" type="roundTextured" title="Add Comic" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" inset="2" id="aB1-ve-mce">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="addComic:" target="DiI-63-z8V" id="Hft-bP-PE7"/>
-                        </connections>
-                    </button>
                     <splitView dividerStyle="thin" vertical="YES" id="94B-oq-rQ1">
-                        <rect key="frame" x="0.0" y="32" width="811" height="616"/>
+                        <rect key="frame" x="0.0" y="0.0" width="811" height="648"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <customView id="Zxe-H7-MgX">
-                                <rect key="frame" x="0.0" y="0.0" width="238" height="616"/>
+                                <rect key="frame" x="0.0" y="0.0" width="238" height="648"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <searchField wantsLayer="YES" verticalHuggingPriority="750" id="BBj-yB-KCN">
-                                        <rect key="frame" x="5" y="587" width="225" height="22"/>
+                                        <rect key="frame" x="5" y="619" width="225" height="22"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Series Search" usesSingleLineMode="YES" bezelStyle="round" id="6b0-mY-deT">
                                             <font key="font" metaFont="system"/>
@@ -409,7 +398,7 @@
                                         </connections>
                                     </searchField>
                                     <scrollView autohidesScrollers="YES" horizontalLineScroll="34" horizontalPageScroll="10" verticalLineScroll="34" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="nOg-8r-Mpp">
-                                        <rect key="frame" x="0.0" y="0.0" width="235" height="580"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="612"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <clipView key="contentView" id="UgR-18-BeL">
                                             <rect key="frame" x="1" y="1" width="233" height="578"/>
@@ -488,21 +477,21 @@
                                 </subviews>
                             </customView>
                             <customView id="Mjj-uI-Jgp">
-                                <rect key="frame" x="239" y="0.0" width="572" height="616"/>
+                                <rect key="frame" x="239" y="0.0" width="572" height="648"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
                                     <tabView id="cwS-Yx-av7">
-                                        <rect key="frame" x="8" y="9" width="551" height="593"/>
+                                        <rect key="frame" x="-7" y="-10" width="586" height="579"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <font key="font" metaFont="system"/>
                                         <tabViewItems>
                                             <tabViewItem label="Issues" identifier="1" id="Wuw-9N-g7r">
                                                 <view key="view" id="TMR-gE-dxh">
-                                                    <rect key="frame" x="10" y="33" width="531" height="547"/>
+                                                    <rect key="frame" x="10" y="33" width="566" height="533"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <scrollView autohidesScrollers="YES" horizontalLineScroll="70" horizontalPageScroll="10" verticalLineScroll="70" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="33w-Fu-rx1">
-                                                            <rect key="frame" x="19" y="33" width="495" height="511"/>
+                                                            <rect key="frame" x="-3" y="0.0" width="572" height="532"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <clipView key="contentView" id="Yd7-bi-xXM">
                                                                 <rect key="frame" x="1" y="1" width="493" height="509"/>
@@ -613,27 +602,16 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </scroller>
                                                         </scrollView>
-                                                        <button verticalHuggingPriority="750" id="utn-PD-qOh">
-                                                            <rect key="frame" x="427" y="1" width="87" height="25"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                                            <buttonCell key="cell" type="roundTextured" title="Remove" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9ST-dz-cbA">
-                                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                                <font key="font" metaFont="system"/>
-                                                            </buttonCell>
-                                                            <connections>
-                                                                <action selector="remove:" target="JCK-cE-HtR" id="X4D-NM-U1p"/>
-                                                            </connections>
-                                                        </button>
                                                     </subviews>
                                                 </view>
                                             </tabViewItem>
                                             <tabViewItem label="TPB" identifier="2" id="DAQ-jX-OKJ">
                                                 <view key="view" id="x8G-4n-twi">
-                                                    <rect key="frame" x="10" y="33" width="531" height="547"/>
+                                                    <rect key="frame" x="10" y="33" width="566" height="533"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="Swk-fe-fcE">
-                                                            <rect key="frame" x="19" y="33" width="495" height="512"/>
+                                                            <rect key="frame" x="34" y="84" width="495" height="430"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <clipView key="contentView" id="JQi-zR-KJv">
                                                                 <rect key="frame" x="1" y="17" width="493" height="494"/>
@@ -742,9 +720,9 @@
                                                             </tableHeaderView>
                                                         </scrollView>
                                                         <button verticalHuggingPriority="750" id="JkN-zc-8rh">
-                                                            <rect key="frame" x="25" y="1" width="87" height="25"/>
+                                                            <rect key="frame" x="28" y="10" width="87" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                                            <buttonCell key="cell" type="roundTextured" title="Remove" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OBi-QR-rUf">
+                                                            <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OBi-QR-rUf">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
@@ -757,11 +735,11 @@
                                             </tabViewItem>
                                             <tabViewItem label="Story Arcs" identifier="" id="lev-fM-G4b">
                                                 <view key="view" id="ReX-z8-GOy">
-                                                    <rect key="frame" x="10" y="33" width="531" height="547"/>
+                                                    <rect key="frame" x="10" y="33" width="566" height="501"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="EE5-BI-4xA">
-                                                            <rect key="frame" x="17" y="276" width="497" height="268"/>
+                                                            <rect key="frame" x="32" y="295" width="497" height="200"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <clipView key="contentView" id="sj7-XB-caN">
                                                                 <rect key="frame" x="1" y="1" width="495" height="266"/>
@@ -827,14 +805,14 @@
                                                             </scroller>
                                                         </scrollView>
                                                         <box verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="m0i-cx-m2g">
-                                                            <rect key="frame" x="17" y="260" width="497" height="5"/>
+                                                            <rect key="frame" x="32" y="279" width="497" height="5"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                                                             <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <font key="titleFont" metaFont="system"/>
                                                         </box>
                                                         <scrollView autohidesScrollers="YES" horizontalLineScroll="45" horizontalPageScroll="10" verticalLineScroll="45" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="fIv-hc-UgY">
-                                                            <rect key="frame" x="17" y="17" width="495" height="231"/>
+                                                            <rect key="frame" x="32" y="36" width="495" height="231"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                             <clipView key="contentView" id="vzH-bL-vI8">
                                                                 <rect key="frame" x="1" y="1" width="493" height="229"/>
@@ -951,7 +929,92 @@
                                                 </view>
                                             </tabViewItem>
                                         </tabViewItems>
+                                        <connections>
+                                            <binding destination="a73-8C-MaW" name="hidden" keyPath="selection.title" id="6HI-k8-zPO">
+                                                <dictionary key="options">
+                                                    <integer key="NSMultipleValuesPlaceholder" value="1"/>
+                                                    <integer key="NSNoSelectionPlaceholder" value="1"/>
+                                                    <integer key="NSNotApplicablePlaceholder" value="1"/>
+                                                    <integer key="NSNullPlaceholder" value="1"/>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
                                     </tabView>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="JUi-gr-m2K">
+                                        <rect key="frame" x="18" y="604" width="536" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="u5m-po-1fE">
+                                            <font key="font" size="20" name=".HelveticaNeueDeskInterface-Regular"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="a73-8C-MaW" name="displayPatternValue1" keyPath="selection.title" id="Bt1-2g-Qoe">
+                                                <dictionary key="options">
+                                                    <string key="NSDisplayPattern">%{value1}@-%{value2}@</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="a73-8C-MaW" name="displayPatternValue2" keyPath="selection.publisher.name" previousBinding="Bt1-2g-Qoe" id="UyO-CS-x8C">
+                                                <dictionary key="options">
+                                                    <string key="NSDisplayPattern">%{value1}@-%{value2}@</string>
+                                                    <string key="NSMultipleValuesPlaceholder" base64-UTF8="YES">
+ICA
+</string>
+                                                    <string key="NSNoSelectionPlaceholder" base64-UTF8="YES">
+ICA
+</string>
+                                                    <string key="NSNotApplicablePlaceholder" base64-UTF8="YES">
+ICA
+</string>
+                                                    <string key="NSNullPlaceholder" base64-UTF8="YES">
+ICA
+</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="a73-8C-MaW" name="hidden" keyPath="selection.title" id="eBQ-t8-fpV">
+                                                <dictionary key="options">
+                                                    <integer key="NSMultipleValuesPlaceholder" value="1"/>
+                                                    <integer key="NSNoSelectionPlaceholder" value="1"/>
+                                                    <integer key="NSNotApplicablePlaceholder" value="1"/>
+                                                    <integer key="NSNullPlaceholder" value="1"/>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="PO0-Zi-29q">
+                                        <rect key="frame" x="18" y="586" width="536" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="56c-vO-Ejg">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <binding destination="JCK-cE-HtR" name="displayPatternValue1" keyPath="arrangedObjects.@count" id="WhK-Px-6EP">
+                                                <dictionary key="options">
+                                                    <string key="NSDisplayPattern">%{value1}@ Issues. %{value2}@ TPBs. %{value3}@ Story Arcs.</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="Cju-kn-PXl" name="displayPatternValue2" keyPath="arrangedObjects.@count" previousBinding="WhK-Px-6EP" id="FSb-3A-JsW">
+                                                <dictionary key="options">
+                                                    <string key="NSDisplayPattern">%{value1}@ Issues. %{value2}@ TPBs. %{value3}@ Story Arcs.</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="iby-b7-bco" name="displayPatternValue3" keyPath="arrangedObjects.@count" previousBinding="FSb-3A-JsW" id="S0J-uv-B1N">
+                                                <dictionary key="options">
+                                                    <string key="NSDisplayPattern">%{value1}@ Issues. %{value2}@ TPBs. %{value3}@ Story Arcs.</string>
+                                                </dictionary>
+                                            </binding>
+                                            <binding destination="a73-8C-MaW" name="hidden" keyPath="selection.title" id="8YL-ON-ncK">
+                                                <dictionary key="options">
+                                                    <integer key="NSMultipleValuesPlaceholder" value="1"/>
+                                                    <integer key="NSNoSelectionPlaceholder" value="1"/>
+                                                    <integer key="NSNotApplicablePlaceholder" value="1"/>
+                                                    <integer key="NSNullPlaceholder" value="1"/>
+                                                </dictionary>
+                                            </binding>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                             </customView>
                         </subviews>
@@ -962,8 +1025,7 @@
                     </splitView>
                 </subviews>
             </view>
-            <contentBorderThickness minY="32"/>
-            <point key="canvasLocation" x="-446.5" y="309"/>
+            <point key="canvasLocation" x="-744.5" y="359"/>
         </window>
     </objects>
 </document>
