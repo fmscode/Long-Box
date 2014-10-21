@@ -33,7 +33,7 @@ class ComicsWindow: NSWindowController {
     }
 //    MARK: Class Actions
     @IBAction func addComic(AnyObject){
-        self.comicNewWindow = NewComicWindow(windowNibName:"NewComicWindow")
+        self.comicNewWindow = NewComicWindow(windowNibName: "NewComicWindow")
         self.window?.beginSheet(self.comicNewWindow.window!, completionHandler: { (NSModalResponse) -> Void in
 
         })

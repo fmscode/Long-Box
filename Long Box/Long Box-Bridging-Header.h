@@ -5,3 +5,8 @@
 #import "NewComicWindow.h"
 #import "EditIssueWindow.h"
 #import "CoreDataManagerX.h"
+#import "Issue.h"
+#import "Publisher.h"
+#import "Series.h"
+#import "Trade.h"
+#import "StoryArc.h"

@@ -17,7 +17,7 @@
                 <outlet property="seriesController" destination="Qg1-td-FeK" id="TPW-Os-lc5"/>
                 <outlet property="storyArcBox" destination="6Ff-TG-lNZ" id="030-Fj-41U"/>
                 <outlet property="tabView" destination="TSu-PG-k4B" id="Bl3-6y-chl"/>
-                <outlet property="tpbTitleField" destination="fEo-43-fUg" id="qd4-Jd-6uH"/>
+                <outlet property="tradeTitleField" destination="fEo-43-fUg" id="4T4-Yw-GVr"/>
                 <outlet property="variantCheck" destination="gGh-vk-Xqy" id="r4p-uu-Dwo"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -28,7 +28,7 @@
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="872" height="485"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="872" height="485"/>
                 <autoresizingMask key="autoresizingMask"/>
