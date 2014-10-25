@@ -19,7 +19,6 @@
 		DB0D61C819F6DE070082C0DE /* SeriesArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D61C719F6DE070082C0DE /* SeriesArrayController.swift */; };
 		DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D269919FBAFCA00085CA3 /* TradesController.swift */; };
 		DB2D269C19FBB14400085CA3 /* StoryArcsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D269B19FBB14400085CA3 /* StoryArcsController.swift */; };
-		DB50264519FBB51A004E06F1 /* EditIssueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */; };
 		DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEDE19F45556007FD894 /* DateTransformer.swift */; };
 		DB57DEE119F456DD007FD894 /* ComicsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEE019F456DD007FD894 /* ComicsWindow.swift */; };
 		DB57DEE519F45D92007FD894 /* NewComicWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEE419F45D92007FD894 /* NewComicWindow.swift */; };
@@ -63,8 +62,6 @@
 		DB069A0619B7A54600912D2D /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
 		DB069A0819B7A54600912D2D /* StoryArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryArc.h; sourceTree = "<group>"; };
 		DB069A0919B7A54600912D2D /* StoryArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArc.m; sourceTree = "<group>"; };
-		DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIssueWindow.h; sourceTree = "<group>"; };
-		DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIssueWindow.m; sourceTree = "<group>"; };
 		DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIssueWindow.xib; sourceTree = "<group>"; };
 		DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantIndicator.swift; sourceTree = "<group>"; };
 		DB0D61C719F6DE070082C0DE /* SeriesArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesArrayController.swift; sourceTree = "<group>"; };
@@ -140,8 +137,6 @@
 				DB57DEE019F456DD007FD894 /* ComicsWindow.swift */,
 				DB57DEE419F45D92007FD894 /* NewComicWindow.swift */,
 				DB5CC4B619FBB59D00028A86 /* EditIssueWindow.swift */,
-				DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */,
-				DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */,
 				DB2D26A019FBB27500085CA3 /* Views */,
 			);
 			name = UI;
@@ -417,7 +412,6 @@
 				DB57DEE519F45D92007FD894 /* NewComicWindow.swift in Sources */,
 				DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */,
 				DB80CF0F19FBAE09006C10EE /* IssuesController.swift in Sources */,
-				DB50264519FBB51A004E06F1 /* EditIssueWindow.m in Sources */,
 				DB2D269C19FBB14400085CA3 /* StoryArcsController.swift in Sources */,
 				DB069A0719B7A54600912D2D /* Series.m in Sources */,
 			);

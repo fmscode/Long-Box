@@ -84,42 +84,15 @@ class NewComicWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate
         let storyString = self.storyArcBox.stringValue
         
         // Publisher Search/Creation
-        var pubFetch = NSFetchRequest(entityName: "Publisher")
-        pubFetch.predicate = NSPredicate(format: "name LIKE[cd] %@", argumentArray: [publisherString])
-        let publishersFound = context.executeFetchRequest(pubFetch, error: nil)
-        var publisher: Publisher
-        if (publishersFound?.count > 0){
-            publisher = publishersFound?.last as Publisher
-        }else{
-            publisher = NSEntityDescription.insertNewObjectForEntityForName("Publisher", inManagedObjectContext: context) as Publisher
-            publisher.name = publisherString
-        }
+        var publisher = ModelHelpers.publisherWithName(publisherString)
         // Series Search/Creation
-        var seriesFetch = NSFetchRequest(entityName: "Series")
-        seriesFetch.predicate = NSPredicate(format: "title LIKE[cd] %@", argumentArray: [seriesString])
-        let seriesFound = context.executeFetchRequest(seriesFetch, error: nil)
-        var series: Series
-        if (seriesFound?.count > 0){
-            series = seriesFound?.last as Series
-        }else{
-            series = NSEntityDescription.insertNewObjectForEntityForName("Series", inManagedObjectContext: context) as Series
-            series.title = seriesString
-            series.publisher = publisher
-        }
+        var series = ModelHelpers.seriesWithName(seriesString)
+        series.publisher = publisher
         // Story Arc Search/Creation
         var storyArc: StoryArc?
         if (storyString.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) > 0){
-            var storyFetch = NSFetchRequest(entityName: "StoryArc")
-            storyFetch.predicate = NSPredicate(format: "title LIKE[cd] %@", argumentArray: [storyString])
-            let storiesFound = context.executeFetchRequest(storyFetch, error: nil)
-            var storyArc: StoryArc
-            if (storiesFound?.count > 0){
-                storyArc = storiesFound?.last as StoryArc
-            }else{
-                storyArc = NSEntityDescription.insertNewObjectForEntityForName("StoryArc", inManagedObjectContext: context) as StoryArc
-                storyArc.title = storyString
-                storyArc.series = series
-            }
+            var storyArc = ModelHelpers.storyArcWithName(storyString)
+            storyArc.series = series
         }
         // Issue creation
         let selectedTabId = self.tabView.selectedTabViewItem!.identifier as String
