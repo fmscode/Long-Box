@@ -23,6 +23,10 @@ class IssuesTable: NSTableView {
         editingDelegate.editIssue(self)
     }
     
+    func removeIssue(){
+        editingDelegate.removeIssue(self)
+    }
+    
     override func rightMouseDown(theEvent: NSEvent) {
         let point = self.convertPoint(theEvent.locationInWindow, fromView: nil)
         let i = self.rowAtPoint(point)
@@ -30,7 +34,7 @@ class IssuesTable: NSTableView {
         
         var issuesPopUpMenu = NSMenu()
         issuesPopUpMenu.addItem(NSMenuItem(title: "Edit", action: "editIssue", keyEquivalent: ""))
-        
+        issuesPopUpMenu.addItem(NSMenuItem(title: "Remove", action: "removeIssue", keyEquivalent: ""))
         NSMenu.popUpContextMenu(issuesPopUpMenu, withEvent: theEvent, forView: self)
     }
 }

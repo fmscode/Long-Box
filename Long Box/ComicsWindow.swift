@@ -50,5 +50,16 @@ class ComicsWindow: NSWindowController {
             
         })
     }
+    @IBAction func removeIssue(AnyObject){
+        let issue = issuesController.selectedObjects.first as Issue
+        var confirmRemoveAlert = NSAlert()
+        confirmRemoveAlert.messageText = "Are you sure you want to delete issue #\(issue.issueNumber) of \(issue.series.title)?"
+        confirmRemoveAlert.addButtonWithTitle("Yes")
+        confirmRemoveAlert.addButtonWithTitle("Cancel")
+        let response = confirmRemoveAlert.runModal()
+        if (response == NSAlertFirstButtonReturn){
+            issuesController.remove(self)
+        }
+    }
 
 }
