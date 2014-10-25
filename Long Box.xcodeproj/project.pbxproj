@@ -13,16 +13,18 @@
 		DB069A0419B7A54600912D2D /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0319B7A54600912D2D /* Publisher.m */; };
 		DB069A0719B7A54600912D2D /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0619B7A54600912D2D /* Series.m */; };
 		DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0919B7A54600912D2D /* StoryArc.m */; };
-		DB069A1119B7A6CA00912D2D /* EditIssueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */; };
 		DB069A1219B7A6CA00912D2D /* EditIssueWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */; };
 		DB0D61C319F6DBBD0082C0DE /* VariantIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */; };
 		DB0D61C619F6DD810082C0DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD38291193526DA00C8965C /* AppDelegate.m */; };
 		DB0D61C819F6DE070082C0DE /* SeriesArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D61C719F6DE070082C0DE /* SeriesArrayController.swift */; };
 		DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D269919FBAFCA00085CA3 /* TradesController.swift */; };
 		DB2D269C19FBB14400085CA3 /* StoryArcsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D269B19FBB14400085CA3 /* StoryArcsController.swift */; };
+		DB50264519FBB51A004E06F1 /* EditIssueWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */; };
 		DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEDE19F45556007FD894 /* DateTransformer.swift */; };
 		DB57DEE119F456DD007FD894 /* ComicsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEE019F456DD007FD894 /* ComicsWindow.swift */; };
 		DB57DEE519F45D92007FD894 /* NewComicWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEE419F45D92007FD894 /* NewComicWindow.swift */; };
+		DB5CC4B719FBB59D00028A86 /* EditIssueWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B619FBB59D00028A86 /* EditIssueWindow.swift */; };
+		DB5CC4BA19FBBA3600028A86 /* ModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B919FBBA3600028A86 /* ModelHelpers.swift */; };
 		DB80CF0F19FBAE09006C10EE /* IssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80CF0E19FBAE09006C10EE /* IssuesController.swift */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD38287193526DA00C8965C /* InfoPlist.strings */; };
@@ -73,6 +75,8 @@
 		DB57DEDE19F45556007FD894 /* DateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransformer.swift; sourceTree = "<group>"; };
 		DB57DEE019F456DD007FD894 /* ComicsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsWindow.swift; sourceTree = "<group>"; };
 		DB57DEE419F45D92007FD894 /* NewComicWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewComicWindow.swift; sourceTree = "<group>"; };
+		DB5CC4B619FBB59D00028A86 /* EditIssueWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIssueWindow.swift; sourceTree = "<group>"; };
+		DB5CC4B919FBBA3600028A86 /* ModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelHelpers.swift; sourceTree = "<group>"; };
 		DB80CF0E19FBAE09006C10EE /* IssuesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesController.swift; sourceTree = "<group>"; };
 		DBD3827B193526DA00C8965C /* Long Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Long Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3827E193526DA00C8965C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -120,6 +124,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB2D269D19FBB23000085CA3 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				DBD38293193526DA00C8965C /* MainMenu.xib */,
+				DBD382BB193529E800C8965C /* NewComicWindow.xib */,
+				DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		DB2D269E19FBB23900085CA3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DB57DEE019F456DD007FD894 /* ComicsWindow.swift */,
+				DB57DEE419F45D92007FD894 /* NewComicWindow.swift */,
+				DB5CC4B619FBB59D00028A86 /* EditIssueWindow.swift */,
+				DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */,
+				DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */,
+				DB2D26A019FBB27500085CA3 /* Views */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DB2D269F19FBB24D00085CA3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DB0699FA19B7A21E00912D2D /* gradescale.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		DB2D26A019FBB27500085CA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		DB5AA9DB193B7E4E00960168 /* Array Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +172,14 @@
 				DB2D269B19FBB14400085CA3 /* StoryArcsController.swift */,
 			);
 			name = "Array Controllers";
+			sourceTree = "<group>";
+		};
+		DB5CC4B819FBBA1F00028A86 /* Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB5CC4B919FBBA3600028A86 /* ModelHelpers.swift */,
+			);
+			name = "Core Data Helpers";
 			sourceTree = "<group>";
 		};
 		DBD38272193526DA00C8965C = {
@@ -176,15 +227,11 @@
 				DB23D0D419A20F4000083C45 /* Long Box.entitlements */,
 				DBD38290193526DA00C8965C /* AppDelegate.h */,
 				DBD38291193526DA00C8965C /* AppDelegate.m */,
-				DBD38293193526DA00C8965C /* MainMenu.xib */,
-				DB57DEE019F456DD007FD894 /* ComicsWindow.swift */,
-				DB57DEE419F45D92007FD894 /* NewComicWindow.swift */,
-				DBD382BB193529E800C8965C /* NewComicWindow.xib */,
-				DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */,
-				DB069A0E19B7A6CA00912D2D /* EditIssueWindow.h */,
-				DB069A0F19B7A6CA00912D2D /* EditIssueWindow.m */,
-				DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */,
-				DB0699FA19B7A21E00912D2D /* gradescale.plist */,
+				DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */,
+				DB2D269E19FBB23900085CA3 /* UI */,
+				DB2D269D19FBB23000085CA3 /* Nibs */,
+				DB2D269F19FBB24D00085CA3 /* Data */,
+				DB5AA9DB193B7E4E00960168 /* Array Controllers */,
 				DBD382B51935270000C8965C /* Core Data */,
 				DBD38296193526DA00C8965C /* Images.xcassets */,
 				DBD38285193526DA00C8965C /* Supporting Files */,
@@ -225,10 +272,10 @@
 		DBD382B51935270000C8965C /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				DB5CC4B819FBBA1F00028A86 /* Core Data Helpers */,
 				DBD382B2193526E300C8965C /* CoreDataManagerX.h */,
 				DBD382B3193526E300C8965C /* CoreDataManagerX.m */,
 				DB57DEDE19F45556007FD894 /* DateTransformer.swift */,
-				DB5AA9DB193B7E4E00960168 /* Array Controllers */,
 				DBD382B61935271400C8965C /* longbox.xcdatamodeld */,
 				DB069A0819B7A54600912D2D /* StoryArc.h */,
 				DB069A0919B7A54600912D2D /* StoryArc.m */,
@@ -240,7 +287,6 @@
 				DB069A0019B7A54600912D2D /* Issue.m */,
 				DB0699FC19B7A54600912D2D /* Trade.h */,
 				DB0699FD19B7A54600912D2D /* Trade.m */,
-				DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -356,8 +402,10 @@
 			files = (
 				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
 				DB57DEE119F456DD007FD894 /* ComicsWindow.swift in Sources */,
+				DB5CC4B719FBB59D00028A86 /* EditIssueWindow.swift in Sources */,
 				DB0D61C619F6DD810082C0DE /* AppDelegate.m in Sources */,
 				DB069A0419B7A54600912D2D /* Publisher.m in Sources */,
+				DB5CC4BA19FBBA3600028A86 /* ModelHelpers.swift in Sources */,
 				DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */,
 				DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */,
 				DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */,
@@ -369,7 +417,7 @@
 				DB57DEE519F45D92007FD894 /* NewComicWindow.swift in Sources */,
 				DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */,
 				DB80CF0F19FBAE09006C10EE /* IssuesController.swift in Sources */,
-				DB069A1119B7A6CA00912D2D /* EditIssueWindow.m in Sources */,
+				DB50264519FBB51A004E06F1 /* EditIssueWindow.m in Sources */,
 				DB2D269C19FBB14400085CA3 /* StoryArcsController.swift in Sources */,
 				DB069A0719B7A54600912D2D /* Series.m in Sources */,
 			);
