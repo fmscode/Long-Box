@@ -11,7 +11,9 @@
                 <outlet property="issueNumber" destination="iBj-Vw-lhz" id="Iil-tX-PvO"/>
                 <outlet property="publishDate" destination="RXY-1c-Zwl" id="DAV-zU-kvf"/>
                 <outlet property="publisherBox" destination="fLC-Hl-3c4" id="t6n-GM-RfE"/>
+                <outlet property="publisherController" destination="pk2-QZ-6rc" id="8Xl-E5-hlE"/>
                 <outlet property="seriesBox" destination="AwB-wu-3oz" id="jod-eh-XUG"/>
+                <outlet property="seriesController" destination="JfE-3o-ZAM" id="fLp-gV-VTl"/>
                 <outlet property="storyArcBox" destination="MlW-rU-ImC" id="gIW-Jz-GQZ"/>
                 <outlet property="variantCheck" destination="4lA-gd-crv" id="tiu-6H-6KB"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
@@ -34,8 +36,8 @@
                 <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="zBy-Su-hZs"/>
             </connections>
         </arrayController>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="383" height="283"/>
             <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
@@ -92,13 +94,14 @@
                     </textField>
                     <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwB-wu-3oz">
                         <rect key="frame" x="141" y="144" width="216" height="26"/>
-                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="LAB-YZ-0Ao">
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" numberOfVisibleItems="5" id="LAB-YZ-0Ao">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </comboBoxCell>
                         <connections>
                             <binding destination="JfE-3o-ZAM" name="contentValues" keyPath="arrangedObjects.title" id="vef-v8-g3J"/>
+                            <outlet property="delegate" destination="-2" id="Aat-L6-W9F"/>
                         </connections>
                     </comboBox>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UTN-pj-SKr">
@@ -127,24 +130,26 @@
                     </textField>
                     <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLC-Hl-3c4">
                         <rect key="frame" x="141" y="117" width="216" height="26"/>
-                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="1DD-4q-iHl">
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" numberOfVisibleItems="5" id="1DD-4q-iHl">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </comboBoxCell>
                         <connections>
                             <binding destination="pk2-QZ-6rc" name="contentValues" keyPath="arrangedObjects.name" id="nLA-9g-1qm"/>
+                            <outlet property="delegate" destination="-2" id="S2X-0J-Qmv"/>
                         </connections>
                     </comboBox>
                     <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MlW-rU-ImC">
                         <rect key="frame" x="141" y="91" width="216" height="26"/>
-                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="eD7-W5-lpd">
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" numberOfVisibleItems="5" id="eD7-W5-lpd">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </comboBoxCell>
                         <connections>
                             <binding destination="fRN-9r-j84" name="contentValues" keyPath="arrangedObjects.title" id="CU4-Sx-znv"/>
+                            <outlet property="delegate" destination="-2" id="ohL-kp-veJ"/>
                         </connections>
                     </comboBox>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fak-Q3-IEu">
@@ -153,6 +158,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="updateIssue:" target="-2" id="HiH-1b-iC9"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCE-DR-2Nz">
                         <rect key="frame" x="196" y="13" width="82" height="32"/>
@@ -163,6 +171,9 @@
 Gw
 </string>
                         </buttonCell>
+                        <connections>
+                            <action selector="cancelUpdate:" target="-2" id="r3p-9A-Q9l"/>
+                        </connections>
                     </button>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="we7-cQ-miK">
                         <rect key="frame" x="139" y="63" width="218" height="26"/>
@@ -191,6 +202,7 @@ Gw
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="853.5" y="554.5"/>
         </window>
     </objects>
 </document>

@@ -19,6 +19,7 @@
         </customObject>
         <customObject id="DiI-63-z8V" customClass="ComicsWindow" customModule="Long_Box" customModuleProvider="target">
             <connections>
+                <outlet property="IssuesController" destination="JCK-cE-HtR" id="V04-NG-Tzg"/>
                 <outlet property="dataControl" destination="V1G-1B-zsx" id="Wxr-Cp-Mcn"/>
                 <outlet property="dataTabView" destination="cwS-Yx-av7" id="6ut-HB-ati"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="ZAO-yE-frk"/>
@@ -500,7 +501,7 @@
                                                                 <rect key="frame" x="1" y="1" width="493" height="509"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
-                                                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="42" rowSizeStyle="automatic" viewBased="YES" id="CAb-jl-mQ8">
+                                                                    <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="42" rowSizeStyle="automatic" viewBased="YES" id="CAb-jl-mQ8" customClass="IssuesTable" customModule="Long_Box" customModuleProvider="target">
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -574,6 +575,9 @@
                                                                                 </connections>
                                                                             </tableColumn>
                                                                         </tableColumns>
+                                                                        <connections>
+                                                                            <outlet property="editingDelegate" destination="DiI-63-z8V" id="Lj5-4b-wIL"/>
+                                                                        </connections>
                                                                     </tableView>
                                                                 </subviews>
                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>

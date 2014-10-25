@@ -13,6 +13,7 @@ class ComicsWindow: NSWindowController {
     var managedObjectContext: NSManagedObjectContext!
     @IBOutlet weak var dataControl: NSSegmentedControl!
     @IBOutlet weak var dataTabView: NSTabView!
+    @IBOutlet weak var issuesController: NSArrayController!
     
     var comicNewWindow: NewComicWindow!
     var editWindow: EditIssueWindow!
@@ -40,6 +41,14 @@ class ComicsWindow: NSWindowController {
     }
     @IBAction func changeInformation(AnyObject){
         self.dataTabView.selectTabViewItemAtIndex(self.dataControl.selectedSegment)
+    }
+    @IBAction func editIssue(AnyObject){
+        print(issuesController.selectedObjects.first)
+        self.editWindow = EditIssueWindow(windowNibName: "EditIssueWindow")
+        self.editWindow.editingIssue = issuesController.selectedObjects.first as Issue
+        self.window?.beginSheet(self.editWindow.window!, completionHandler: { (NSModalResponse) -> Void in
+            
+        })
     }
 
 }
