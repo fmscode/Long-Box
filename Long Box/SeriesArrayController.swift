@@ -12,19 +12,9 @@ class SeriesArrayController: NSArrayController {
     var searchString = ""
     
     
-    override init() {
-        super.init()
-        self.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-    }
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-    }
-    
-    override init(content: AnyObject?) {
-        super.init(content: content)
-        self.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        self.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true, selector: "localizedStandardCompare:")]
     }
     
     @IBAction func search(sender: AnyObject){

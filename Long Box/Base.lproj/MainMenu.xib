@@ -30,19 +30,19 @@
                 <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="uDO-qG-N5u"/>
             </connections>
         </arrayController>
-        <arrayController mode="entity" entityName="Issue" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" automaticallyRearrangesObjects="YES" id="JCK-cE-HtR" userLabel="Issues Controller" customClass="IssuesArrayController">
+        <arrayController mode="entity" entityName="Issue" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" automaticallyRearrangesObjects="YES" id="JCK-cE-HtR" userLabel="Issues Controller " customClass="IssuesController" customModule="Long_Box" customModuleProvider="target">
             <connections>
                 <binding destination="a73-8C-MaW" name="contentSet" keyPath="selection.issues" id="uML-7F-ilD"/>
                 <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="QlB-fw-GQR"/>
             </connections>
         </arrayController>
-        <arrayController mode="entity" entityName="Trade" editable="NO" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" automaticallyRearrangesObjects="YES" id="Cju-kn-PXl" userLabel="Trade Controller" customClass="TradesArrayController">
+        <arrayController mode="entity" entityName="Trade" editable="NO" automaticallyPreparesContent="YES" avoidsEmptySelection="NO" automaticallyRearrangesObjects="YES" id="Cju-kn-PXl" userLabel="Trade Controller" customClass="TradesController" customModule="Long_Box" customModuleProvider="target">
             <connections>
                 <binding destination="a73-8C-MaW" name="contentSet" keyPath="selection.trades" id="K8F-jv-kco"/>
                 <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="ljw-0U-2in"/>
             </connections>
         </arrayController>
-        <arrayController id="iby-b7-bco" userLabel="Story Arcs" customClass="StoryArcsArrayController">
+        <arrayController id="iby-b7-bco" userLabel="Story Arcs" customClass="StoryArcsController" customModule="Long_Box" customModuleProvider="target">
             <connections>
                 <binding destination="a73-8C-MaW" name="contentSet" keyPath="selection.storyArcs" id="4Tf-PN-MGN"/>
                 <binding destination="DiI-63-z8V" name="managedObjectContext" keyPath="self.managedObjectContext" id="GXm-aF-fVD"/>
@@ -961,7 +961,7 @@ ICA
                     </splitView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-800.5" y="175"/>
+            <point key="canvasLocation" x="-1129.5" y="282"/>
         </window>
     </objects>
 </document>
