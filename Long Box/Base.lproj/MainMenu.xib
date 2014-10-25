@@ -933,12 +933,12 @@ ICA
                                         </connections>
                                     </textField>
                                     <segmentedControl verticalHuggingPriority="750" id="V1G-1B-zsx">
-                                        <rect key="frame" x="342" y="569" width="212" height="24"/>
+                                        <rect key="frame" x="342" y="569" width="213" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="NuU-vd-D4X">
                                             <font key="font" metaFont="system"/>
                                             <segments>
-                                                <segment label="Series" selected="YES"/>
+                                                <segment label="Issues" selected="YES"/>
                                                 <segment label="Trades" tag="1"/>
                                                 <segment label="Story Arcs"/>
                                             </segments>
