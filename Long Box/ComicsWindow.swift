@@ -56,7 +56,7 @@ class ComicsWindow: NSWindowController {
         let issue = issuesController.selectedObjects.first as Issue
         var confirmRemoveAlert = NSAlert()
         confirmRemoveAlert.messageText = "Are you sure you want to delete issue #\(issue.issueNumber) of \(issue.series.title)?"
-        confirmRemoveAlert.addButtonWithTitle("Yes")
+        confirmRemoveAlert.addButtonWithTitle("Delete")
         confirmRemoveAlert.addButtonWithTitle("Cancel")
         let response = confirmRemoveAlert.runModal()
         if (response == NSAlertFirstButtonReturn){
@@ -68,7 +68,7 @@ class ComicsWindow: NSWindowController {
         let series = seriesController.selectedObjects.first as Series
         var confirmRemoveAlert = NSAlert()
         confirmRemoveAlert.messageText = "Are you sure you want to remove the \(series.title) series?"
-        confirmRemoveAlert.addButtonWithTitle("Yes")
+        confirmRemoveAlert.addButtonWithTitle("Delete")
         confirmRemoveAlert.addButtonWithTitle("Cancel")
         let response = confirmRemoveAlert.runModal()
         if (response == NSAlertFirstButtonReturn){

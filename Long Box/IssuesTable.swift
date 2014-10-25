@@ -37,4 +37,11 @@ class IssuesTable: NSTableView {
         issuesPopUpMenu.addItem(NSMenuItem(title: "Remove", action: "removeIssue", keyEquivalent: ""))
         NSMenu.popUpContextMenu(issuesPopUpMenu, withEvent: theEvent, forView: self)
     }
+ 
+    
+    override func keyDown(theEvent: NSEvent) {
+        if (Int(theEvent.keyCode) == 51){
+            self.removeIssue()
+        }
+    }
 }

@@ -809,17 +809,6 @@
                                                                                                     <binding destination="6cv-rk-lGv" name="value" keyPath="objectValue.publishDate" id="LA3-Di-li7"/>
                                                                                                 </connections>
                                                                                             </textField>
-                                                                                            <customView id="xuO-WH-1Nr" customClass="VariantIndicator">
-                                                                                                <rect key="frame" x="-1" y="-2" width="20" height="45"/>
-                                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                                                <connections>
-                                                                                                    <binding destination="6cv-rk-lGv" name="hidden" keyPath="objectValue.variant" id="pkM-tI-j4z">
-                                                                                                        <dictionary key="options">
-                                                                                                            <string key="NSValueTransformerName">NSNegateBoolean</string>
-                                                                                                        </dictionary>
-                                                                                                    </binding>
-                                                                                                </connections>
-                                                                                            </customView>
                                                                                         </subviews>
                                                                                         <connections>
                                                                                             <outlet property="textField" destination="kjO-9T-FSV" id="xhr-eY-S5R"/>

@@ -30,4 +30,10 @@ class SeriesTable: NSTableView {
         issuesPopUpMenu.addItem(NSMenuItem(title: "Remove", action: "removeSeries", keyEquivalent: ""))
         NSMenu.popUpContextMenu(issuesPopUpMenu, withEvent: theEvent, forView: self)
     }
+    override func keyDown(theEvent: NSEvent) {
+        if (Int(theEvent.keyCode) == 51){
+            self.removeSeries()
+        }
+    }
+
 }
