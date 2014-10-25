@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Issue" representedClassName="Issue" syncable="YES">
         <attribute name="condition" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="issueNumber" attributeType="String" syncable="YES"/>
@@ -15,10 +15,10 @@
     </entity>
     <entity name="Series" representedClassName="Series" syncable="YES">
         <attribute name="title" attributeType="String" syncable="YES"/>
-        <relationship name="issues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Issue" inverseName="series" inverseEntity="Issue" syncable="YES"/>
+        <relationship name="issues" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Issue" inverseName="series" inverseEntity="Issue" syncable="YES"/>
         <relationship name="publisher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Publisher" inverseName="series" inverseEntity="Publisher" syncable="YES"/>
         <relationship name="storyArcs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StoryArc" inverseName="series" inverseEntity="StoryArc" syncable="YES"/>
-        <relationship name="trades" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trade" inverseName="series" inverseEntity="Trade" syncable="YES"/>
+        <relationship name="trades" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Trade" inverseName="series" inverseEntity="Trade" syncable="YES"/>
     </entity>
     <entity name="StoryArc" representedClassName="StoryArc" syncable="YES">
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,7 +36,7 @@
     <elements>
         <element name="Issue" positionX="304" positionY="-342" width="128" height="148"/>
         <element name="Publisher" positionX="-56" positionY="-180" width="128" height="73"/>
-        <element name="Series" positionX="117" positionY="-180" width="128" height="118"/>
+        <element name="Series" positionX="117" positionY="-162" width="128" height="118"/>
         <element name="StoryArc" positionX="358" positionY="-162" width="128" height="103"/>
         <element name="Trade" positionX="306" positionY="-27" width="128" height="118"/>
     </elements>

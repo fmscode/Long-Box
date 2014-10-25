@@ -67,7 +67,7 @@ class ComicsWindow: NSWindowController {
     @IBAction func removeSeries(AnyObject){
         let series = seriesController.selectedObjects.first as Series
         var confirmRemoveAlert = NSAlert()
-        confirmRemoveAlert.messageText = "Are you sure you want to remove the \(series.title) series?"
+        confirmRemoveAlert.messageText = "Are you sure you want to remove the \(series.title) series? All of its issues and trade records will be removed as well."
         confirmRemoveAlert.addButtonWithTitle("Delete")
         confirmRemoveAlert.addButtonWithTitle("Cancel")
         let response = confirmRemoveAlert.runModal()
