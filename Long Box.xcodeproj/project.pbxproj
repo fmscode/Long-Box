@@ -25,6 +25,7 @@
 		DB5CC4B719FBB59D00028A86 /* EditIssueWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B619FBB59D00028A86 /* EditIssueWindow.swift */; };
 		DB5CC4BA19FBBA3600028A86 /* ModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4B919FBBA3600028A86 /* ModelHelpers.swift */; };
 		DB5CC4BC19FBBD7D00028A86 /* IssuesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4BB19FBBD7D00028A86 /* IssuesTable.swift */; };
+		DB5CC4BE19FBC5B800028A86 /* SeriesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5CC4BD19FBC5B800028A86 /* SeriesTable.swift */; };
 		DB80CF0F19FBAE09006C10EE /* IssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80CF0E19FBAE09006C10EE /* IssuesController.swift */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD38287193526DA00C8965C /* InfoPlist.strings */; };
@@ -76,6 +77,7 @@
 		DB5CC4B619FBB59D00028A86 /* EditIssueWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIssueWindow.swift; sourceTree = "<group>"; };
 		DB5CC4B919FBBA3600028A86 /* ModelHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelHelpers.swift; sourceTree = "<group>"; };
 		DB5CC4BB19FBBD7D00028A86 /* IssuesTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesTable.swift; sourceTree = "<group>"; };
+		DB5CC4BD19FBC5B800028A86 /* SeriesTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesTable.swift; sourceTree = "<group>"; };
 		DB80CF0E19FBAE09006C10EE /* IssuesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesController.swift; sourceTree = "<group>"; };
 		DBD3827B193526DA00C8965C /* Long Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Long Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD3827E193526DA00C8965C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -157,6 +159,7 @@
 			children = (
 				DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */,
 				DB5CC4BB19FBBD7D00028A86 /* IssuesTable.swift */,
+				DB5CC4BD19FBC5B800028A86 /* SeriesTable.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				DB0D61C319F6DBBD0082C0DE /* VariantIndicator.swift in Sources */,
 				DB0D61C819F6DE070082C0DE /* SeriesArrayController.swift in Sources */,
 				DBD3828B193526DA00C8965C /* main.m in Sources */,
+				DB5CC4BE19FBC5B800028A86 /* SeriesTable.swift in Sources */,
 				DB0699FE19B7A54600912D2D /* Trade.m in Sources */,
 				DB57DEE519F45D92007FD894 /* NewComicWindow.swift in Sources */,
 				DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */,

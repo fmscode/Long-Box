@@ -14,6 +14,7 @@ class ComicsWindow: NSWindowController {
     @IBOutlet weak var dataControl: NSSegmentedControl!
     @IBOutlet weak var dataTabView: NSTabView!
     @IBOutlet weak var issuesController: NSArrayController!
+    @IBOutlet weak var seriesController: NSArrayController!
     
     var comicNewWindow: NewComicWindow!
     var editWindow: EditIssueWindow!
@@ -42,6 +43,7 @@ class ComicsWindow: NSWindowController {
     @IBAction func changeInformation(AnyObject){
         self.dataTabView.selectTabViewItemAtIndex(self.dataControl.selectedSegment)
     }
+//    MARK: Editing/Removal Issue
     @IBAction func editIssue(AnyObject){
         print(issuesController.selectedObjects.first)
         self.editWindow = EditIssueWindow(windowNibName: "EditIssueWindow")
@@ -59,6 +61,18 @@ class ComicsWindow: NSWindowController {
         let response = confirmRemoveAlert.runModal()
         if (response == NSAlertFirstButtonReturn){
             issuesController.remove(self)
+        }
+    }
+//    MARK: Editing/Removal Series
+    @IBAction func removeSeries(AnyObject){
+        let series = seriesController.selectedObjects.first as Series
+        var confirmRemoveAlert = NSAlert()
+        confirmRemoveAlert.messageText = "Are you sure you want to remove the \(series.title) series?"
+        confirmRemoveAlert.addButtonWithTitle("Yes")
+        confirmRemoveAlert.addButtonWithTitle("Cancel")
+        let response = confirmRemoveAlert.runModal()
+        if (response == NSAlertFirstButtonReturn){
+            seriesController.remove(self)
         }
     }
 
