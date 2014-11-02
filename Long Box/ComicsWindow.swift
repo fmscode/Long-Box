@@ -27,7 +27,7 @@ class ComicsWindow: NSWindowController {
     }
     override init() {
         super.init()
-        self.managedObjectContext = CoreDataManagerX.sharedInstance().managedObjectContext!
+        self.managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext!
     }
 //    MARK: NSWindowController
     override func windowDidLoad() {

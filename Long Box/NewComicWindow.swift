@@ -31,7 +31,7 @@ class NewComicWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate
     }
     override init(window: NSWindow?) {
         super.init(window: window)
-        self.managedObjectContext = CoreDataManagerX.sharedInstance().managedObjectContext!
+        self.managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext!
     }    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -75,7 +75,7 @@ class NewComicWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate
         }
     }
     func saveComicData(){
-        let context = CoreDataManagerX.sharedInstance().managedObjectContext!
+        let context = CoreDataManager.sharedInstance.managedObjectContext!
         
         let publisherString = self.publisherBox.stringValue
         let seriesString = self.seriesBox.stringValue
@@ -102,7 +102,7 @@ class NewComicWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate
             newIssue.series = series
             newIssue.note = self.notesField.string
             newIssue.variant = NSNumber(integer: self.variantCheck.state)
-            newIssue.condition = self.conditionOptions.titleOfSelectedItem?
+            newIssue.condition = self.conditionOptions.titleOfSelectedItem!
             if (storyArc != nil){
                 newIssue.storyArc = storyArc
             }
@@ -111,13 +111,13 @@ class NewComicWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate
             var newTrade = NSEntityDescription.insertNewObjectForEntityForName("Trade", inManagedObjectContext: context) as Trade
             newTrade.title = self.tradeTitleField.stringValue
             newTrade.series = series
-            newTrade.note = self.notesField.string
-            newTrade.condition = self.conditionOptions.titleOfSelectedItem?
+            newTrade.note = self.notesField.string!
+            newTrade.condition = self.conditionOptions.titleOfSelectedItem!
             if (storyArc != nil){
                 newTrade.storyArc = storyArc
             }
         }
-        CoreDataManagerX.sharedInstance().saveContext()
+        CoreDataManager.sharedInstance.saveContext()
     }
 //    MARK: Class Actions
     @IBAction func cancelNew(id: AnyObject){

@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DB0699FB19B7A21E00912D2D /* gradescale.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB0699FA19B7A21E00912D2D /* gradescale.plist */; };
-		DB0699FE19B7A54600912D2D /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0699FD19B7A54600912D2D /* Trade.m */; };
-		DB069A0119B7A54600912D2D /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0019B7A54600912D2D /* Issue.m */; };
-		DB069A0419B7A54600912D2D /* Publisher.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0319B7A54600912D2D /* Publisher.m */; };
-		DB069A0719B7A54600912D2D /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0619B7A54600912D2D /* Series.m */; };
-		DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */ = {isa = PBXBuildFile; fileRef = DB069A0919B7A54600912D2D /* StoryArc.m */; };
 		DB069A1219B7A6CA00912D2D /* EditIssueWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */; };
 		DB0D61C319F6DBBD0082C0DE /* VariantIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */; };
-		DB0D61C619F6DD810082C0DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD38291193526DA00C8965C /* AppDelegate.m */; };
 		DB0D61C819F6DE070082C0DE /* SeriesArrayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D61C719F6DE070082C0DE /* SeriesArrayController.swift */; };
+		DB10CF7F1A06C81400E2A890 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF7E1A06C81400E2A890 /* CoreDataManager.swift */; };
+		DB10CF811A06C87600E2A890 /* Series.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF801A06C87600E2A890 /* Series.swift */; };
+		DB10CF831A06C87600E2A890 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF821A06C87600E2A890 /* Publisher.swift */; };
+		DB10CF851A06C87600E2A890 /* StoryArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF841A06C87600E2A890 /* StoryArc.swift */; };
+		DB10CF871A06C87600E2A890 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF861A06C87600E2A890 /* Trade.swift */; };
+		DB10CF891A06C87600E2A890 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF881A06C87600E2A890 /* Issue.swift */; };
+		DB10CF8B1A06CA7500E2A890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB10CF8A1A06CA7500E2A890 /* AppDelegate.swift */; };
 		DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D269919FBAFCA00085CA3 /* TradesController.swift */; };
 		DB2D269C19FBB14400085CA3 /* StoryArcsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2D269B19FBB14400085CA3 /* StoryArcsController.swift */; };
 		DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB57DEDE19F45556007FD894 /* DateTransformer.swift */; };
@@ -29,7 +30,6 @@
 		DB80CF0F19FBAE09006C10EE /* IssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80CF0E19FBAE09006C10EE /* IssuesController.swift */; };
 		DBD3827F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD38289193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD38287193526DA00C8965C /* InfoPlist.strings */; };
-		DBD3828B193526DA00C8965C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3828A193526DA00C8965C /* main.m */; };
 		DBD3828F193526DA00C8965C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DBD3828D193526DA00C8965C /* Credits.rtf */; };
 		DBD38295193526DA00C8965C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD38293193526DA00C8965C /* MainMenu.xib */; };
 		DBD38297193526DA00C8965C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD38296193526DA00C8965C /* Images.xcassets */; };
@@ -37,7 +37,6 @@
 		DBD3829F193526DA00C8965C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBD3827E193526DA00C8965C /* Cocoa.framework */; };
 		DBD382A7193526DA00C8965C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBD382A5193526DA00C8965C /* InfoPlist.strings */; };
 		DBD382A9193526DA00C8965C /* Long_BoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD382A8193526DA00C8965C /* Long_BoxTests.m */; };
-		DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD382B3193526E300C8965C /* CoreDataManagerX.m */; };
 		DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBD382B61935271400C8965C /* longbox.xcdatamodeld */; };
 		DBD382BD193529E800C8965C /* NewComicWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBD382BB193529E800C8965C /* NewComicWindow.xib */; };
 /* End PBXBuildFile section */
@@ -54,23 +53,19 @@
 
 /* Begin PBXFileReference section */
 		DB0699FA19B7A21E00912D2D /* gradescale.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gradescale.plist; sourceTree = "<group>"; };
-		DB0699FC19B7A54600912D2D /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
-		DB0699FD19B7A54600912D2D /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
-		DB0699FF19B7A54600912D2D /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
-		DB069A0019B7A54600912D2D /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
-		DB069A0219B7A54600912D2D /* Publisher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Publisher.h; sourceTree = "<group>"; };
-		DB069A0319B7A54600912D2D /* Publisher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Publisher.m; sourceTree = "<group>"; };
-		DB069A0519B7A54600912D2D /* Series.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Series.h; sourceTree = "<group>"; };
-		DB069A0619B7A54600912D2D /* Series.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Series.m; sourceTree = "<group>"; };
-		DB069A0819B7A54600912D2D /* StoryArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryArc.h; sourceTree = "<group>"; };
-		DB069A0919B7A54600912D2D /* StoryArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryArc.m; sourceTree = "<group>"; };
 		DB069A1019B7A6CA00912D2D /* EditIssueWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIssueWindow.xib; sourceTree = "<group>"; };
 		DB0D61C219F6DBBD0082C0DE /* VariantIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantIndicator.swift; sourceTree = "<group>"; };
 		DB0D61C719F6DE070082C0DE /* SeriesArrayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesArrayController.swift; sourceTree = "<group>"; };
+		DB10CF7E1A06C81400E2A890 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		DB10CF801A06C87600E2A890 /* Series.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Series.swift; sourceTree = "<group>"; };
+		DB10CF821A06C87600E2A890 /* Publisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		DB10CF841A06C87600E2A890 /* StoryArc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryArc.swift; sourceTree = "<group>"; };
+		DB10CF861A06C87600E2A890 /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		DB10CF881A06C87600E2A890 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		DB10CF8A1A06CA7500E2A890 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB23D0D419A20F4000083C45 /* Long Box.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Long Box.entitlements"; sourceTree = "<group>"; };
 		DB2D269919FBAFCA00085CA3 /* TradesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradesController.swift; sourceTree = "<group>"; };
 		DB2D269B19FBB14400085CA3 /* StoryArcsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryArcsController.swift; sourceTree = "<group>"; };
-		DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Long Box-Bridging-Header.h"; sourceTree = "<group>"; };
 		DB57DEDE19F45556007FD894 /* DateTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransformer.swift; sourceTree = "<group>"; };
 		DB57DEE019F456DD007FD894 /* ComicsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsWindow.swift; sourceTree = "<group>"; };
 		DB57DEE419F45D92007FD894 /* NewComicWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewComicWindow.swift; sourceTree = "<group>"; };
@@ -86,11 +81,7 @@
 		DBD38283193526DA00C8965C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DBD38286193526DA00C8965C /* Long Box-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Long Box-Info.plist"; sourceTree = "<group>"; };
 		DBD38288193526DA00C8965C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DBD3828A193526DA00C8965C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DBD3828C193526DA00C8965C /* Long Box-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Long Box-Prefix.pch"; sourceTree = "<group>"; };
 		DBD3828E193526DA00C8965C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		DBD38290193526DA00C8965C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DBD38291193526DA00C8965C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DBD38294193526DA00C8965C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DBD38296193526DA00C8965C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBD3829C193526DA00C8965C /* Long BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Long BoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +89,6 @@
 		DBD382A4193526DA00C8965C /* Long BoxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Long BoxTests-Info.plist"; sourceTree = "<group>"; };
 		DBD382A6193526DA00C8965C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DBD382A8193526DA00C8965C /* Long_BoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Long_BoxTests.m; sourceTree = "<group>"; };
-		DBD382B2193526E300C8965C /* CoreDataManagerX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManagerX.h; sourceTree = "<group>"; };
-		DBD382B3193526E300C8965C /* CoreDataManagerX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManagerX.m; sourceTree = "<group>"; };
 		DBD382B71935271400C8965C /* longbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = longbox.xcdatamodel; sourceTree = "<group>"; };
 		DBD382BB193529E800C8965C /* NewComicWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewComicWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -226,9 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				DB23D0D419A20F4000083C45 /* Long Box.entitlements */,
-				DBD38290193526DA00C8965C /* AppDelegate.h */,
-				DBD38291193526DA00C8965C /* AppDelegate.m */,
-				DB57DEDD19F45556007FD894 /* Long Box-Bridging-Header.h */,
+				DB10CF8A1A06CA7500E2A890 /* AppDelegate.swift */,
 				DB2D269D19FBB23000085CA3 /* Nibs */,
 				DB2D269E19FBB23900085CA3 /* UI */,
 				DB2D269F19FBB24D00085CA3 /* Data */,
@@ -245,8 +232,6 @@
 			children = (
 				DBD38286193526DA00C8965C /* Long Box-Info.plist */,
 				DBD38287193526DA00C8965C /* InfoPlist.strings */,
-				DBD3828A193526DA00C8965C /* main.m */,
-				DBD3828C193526DA00C8965C /* Long Box-Prefix.pch */,
 				DBD3828D193526DA00C8965C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -274,20 +259,14 @@
 			isa = PBXGroup;
 			children = (
 				DB5CC4B819FBBA1F00028A86 /* Core Data Helpers */,
-				DBD382B2193526E300C8965C /* CoreDataManagerX.h */,
-				DBD382B3193526E300C8965C /* CoreDataManagerX.m */,
 				DB57DEDE19F45556007FD894 /* DateTransformer.swift */,
+				DB10CF7E1A06C81400E2A890 /* CoreDataManager.swift */,
 				DBD382B61935271400C8965C /* longbox.xcdatamodeld */,
-				DB069A0819B7A54600912D2D /* StoryArc.h */,
-				DB069A0919B7A54600912D2D /* StoryArc.m */,
-				DB069A0519B7A54600912D2D /* Series.h */,
-				DB069A0619B7A54600912D2D /* Series.m */,
-				DB069A0219B7A54600912D2D /* Publisher.h */,
-				DB069A0319B7A54600912D2D /* Publisher.m */,
-				DB0699FF19B7A54600912D2D /* Issue.h */,
-				DB069A0019B7A54600912D2D /* Issue.m */,
-				DB0699FC19B7A54600912D2D /* Trade.h */,
-				DB0699FD19B7A54600912D2D /* Trade.m */,
+				DB10CF881A06C87600E2A890 /* Issue.swift */,
+				DB10CF861A06C87600E2A890 /* Trade.swift */,
+				DB10CF841A06C87600E2A890 /* StoryArc.swift */,
+				DB10CF821A06C87600E2A890 /* Publisher.swift */,
+				DB10CF801A06C87600E2A890 /* Series.swift */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -401,27 +380,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBD382B4193526E300C8965C /* CoreDataManagerX.m in Sources */,
+				DB10CF831A06C87600E2A890 /* Publisher.swift in Sources */,
 				DB57DEE119F456DD007FD894 /* ComicsWindow.swift in Sources */,
 				DB5CC4B719FBB59D00028A86 /* EditIssueWindow.swift in Sources */,
-				DB0D61C619F6DD810082C0DE /* AppDelegate.m in Sources */,
 				DB5CC4BC19FBBD7D00028A86 /* IssuesTable.swift in Sources */,
-				DB069A0419B7A54600912D2D /* Publisher.m in Sources */,
 				DB5CC4BA19FBBA3600028A86 /* ModelHelpers.swift in Sources */,
 				DB57DEDF19F45556007FD894 /* DateTransformer.swift in Sources */,
-				DB069A0A19B7A54600912D2D /* StoryArc.m in Sources */,
 				DBD382B81935271400C8965C /* longbox.xcdatamodeld in Sources */,
-				DB069A0119B7A54600912D2D /* Issue.m in Sources */,
+				DB10CF891A06C87600E2A890 /* Issue.swift in Sources */,
 				DB0D61C319F6DBBD0082C0DE /* VariantIndicator.swift in Sources */,
 				DB0D61C819F6DE070082C0DE /* SeriesArrayController.swift in Sources */,
-				DBD3828B193526DA00C8965C /* main.m in Sources */,
+				DB10CF871A06C87600E2A890 /* Trade.swift in Sources */,
+				DB10CF7F1A06C81400E2A890 /* CoreDataManager.swift in Sources */,
+				DB10CF811A06C87600E2A890 /* Series.swift in Sources */,
 				DB5CC4BE19FBC5B800028A86 /* SeriesTable.swift in Sources */,
-				DB0699FE19B7A54600912D2D /* Trade.m in Sources */,
 				DB57DEE519F45D92007FD894 /* NewComicWindow.swift in Sources */,
 				DB2D269A19FBAFCA00085CA3 /* TradesController.swift in Sources */,
 				DB80CF0F19FBAE09006C10EE /* IssuesController.swift in Sources */,
+				DB10CF8B1A06CA7500E2A890 /* AppDelegate.swift in Sources */,
 				DB2D269C19FBB14400085CA3 /* StoryArcsController.swift in Sources */,
-				DB069A0719B7A54600912D2D /* Series.m in Sources */,
+				DB10CF851A06C87600E2A890 /* StoryArc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +540,7 @@
 				INFOPLIST_FILE = "Long Box/Long Box-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Long Box/Long Box-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -581,7 +559,7 @@
 				INFOPLIST_FILE = "Long Box/Long Box-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Long Box/Long Box-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

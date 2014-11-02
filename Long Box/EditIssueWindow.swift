@@ -31,7 +31,7 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
     }
     override init(window: NSWindow?){
         super.init(window: window)
-        self.managedObjectContext = CoreDataManagerX.sharedInstance().managedObjectContext!
+        self.managedObjectContext = CoreDataManager.sharedInstance.managedObjectContext!
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -56,10 +56,10 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
         self.variantCheck.state = self.editingIssue.variant.integerValue
         self.publisherBox.stringValue = self.editingIssue.series.publisher.name
         if self.editingIssue.storyArc != nil {
-            self.storyArcBox.stringValue = self.editingIssue.storyArc.title
+            self.storyArcBox.stringValue = self.editingIssue.storyArc!.title
         }
-        if self.editingIssue.note != nil && self.editingIssue.note.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 0{
-            self.notesField.string = self.editingIssue.note
+        if self.editingIssue.note != nil && self.editingIssue.note!.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 0{
+            self.notesField.string = self.editingIssue.note!
         }
         self.conditionOptions.selectItemWithTitle(self.editingIssue.condition)
     }
@@ -72,7 +72,7 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
         self.editingIssue.issueNumber = self.issueNumber.stringValue;
         self.editingIssue.publishDate = self.publishDate.stringValue;
         self.editingIssue.variant = NSNumber(integer: self.variantCheck.state)
-        self.editingIssue.condition = self.conditionOptions.titleOfSelectedItem
+        self.editingIssue.condition = self.conditionOptions.titleOfSelectedItem!
         
         let publisherString = self.publisherBox.stringValue
         let seriesString = self.seriesBox.stringValue
@@ -89,7 +89,7 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
         self.editingIssue.series = series
         self.editingIssue.storyArc = storyArc
         
-        CoreDataManagerX.sharedInstance().saveContext()
+        CoreDataManager.sharedInstance.saveContext()
         self.window!.sheetParent?.endSheet(self.window!)
     }
 //    MARK: NSComboBox Delegate
