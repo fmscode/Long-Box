@@ -29,12 +29,10 @@ class NewComicWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate
     override init() {
         super.init()
     }
-    
     override init(window: NSWindow?) {
         super.init(window: window)
         self.managedObjectContext = CoreDataManagerX.sharedInstance().managedObjectContext!
-    }
-    
+    }    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }

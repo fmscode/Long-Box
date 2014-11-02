@@ -19,9 +19,9 @@
         </customObject>
         <customObject id="DiI-63-z8V" customClass="ComicsWindow" customModule="Long_Box" customModuleProvider="target">
             <connections>
-                <outlet property="IssuesController" destination="JCK-cE-HtR" id="V04-NG-Tzg"/>
                 <outlet property="dataControl" destination="V1G-1B-zsx" id="Wxr-Cp-Mcn"/>
                 <outlet property="dataTabView" destination="cwS-Yx-av7" id="6ut-HB-ati"/>
+                <outlet property="issuesController" destination="JCK-cE-HtR" id="10X-t8-xl7"/>
                 <outlet property="seriesController" destination="a73-8C-MaW" id="tof-7B-fcF"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="ZAO-yE-frk"/>
             </connections>

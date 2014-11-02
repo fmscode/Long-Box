@@ -10,11 +10,11 @@ import Cocoa
 
 class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegate {
 
-    //    MARK: Class Variables
+//    MARK: Class Variables
     var managedObjectContext: NSManagedObjectContext!
     var editingIssue: Issue!
     var conditions: NSArray!
-    //    MARK: UI Variables
+//    MARK: UI Variables
     @IBOutlet weak var seriesController: NSArrayController!
     @IBOutlet weak var publisherController: NSArrayController!
     @IBOutlet weak var issueNumber: NSTextField!
@@ -25,7 +25,7 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
     @IBOutlet weak var storyArcBox: NSComboBox!
     @IBOutlet weak var notesField: NSTextView!
     @IBOutlet weak var conditionOptions: NSPopUpButton!
-    //    MARK: Init
+//    MARK: Init
     override init() {
         super.init()
     }
@@ -36,7 +36,7 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    //    MARK: NSWindowController
+//    MARK: NSWindowController
     override func windowDidLoad() {
         super.windowDidLoad()
         self.conditionOptions.removeAllItems()
@@ -92,7 +92,7 @@ class EditIssueWindow: NSWindowController,NSComboBoxDataSource,NSComboBoxDelegat
         CoreDataManagerX.sharedInstance().saveContext()
         self.window!.sheetParent?.endSheet(self.window!)
     }
-    //    MARK: NSComboBox Delegate
+//    MARK: NSComboBox Delegate
     func updatePublisher(){
         if (self.seriesBox.indexOfSelectedItem != -1){
             self.seriesController.setSelectionIndex(self.seriesBox.indexOfSelectedItem)
